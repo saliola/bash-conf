@@ -12,16 +12,16 @@ Difference between .bashrc, .bash_profile, .profile
 
 From `Difference between .bashrc and .bash_profile`__:
 
-:``~/.profile``: is the place to put stuff that applies to your whole session,
+``~/.profile``: is the place to put stuff that applies to your whole session,
 such as programs that you want to start when you log in (but not graphical
 programs, they go into a different file), and environment variable definitions.
 
-:``~/.bashrc``: is the place to put stuff that applies only to bash itself,
+``~/.bashrc``: is the place to put stuff that applies only to bash itself,
 such as alias and function definitions, shell options, and prompt settings.
 (You could also put key bindings there, but for bash they normally go into
 ~/.inputrc.)
 
-:``~/.bash_profile``: can be used instead of ~/.profile, but you also need to
+``~/.bash_profile``: can be used instead of ~/.profile, but you also need to
 include ~/.bashrc if the shell is interactive. I recommend the following
 contents in ~/.bash_profile::
 
