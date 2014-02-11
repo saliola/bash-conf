@@ -1,0 +1,24 @@
+"\C-x\C-r": re-read-init-file
+
+set editing-mode vi
+set keymap vi-insert
+
+"\e[A": history-search-backward  # up-arrow
+"\e[B": history-search-forward   # down-arrow
+
+"\C-f": forward-word
+"\C-b": backward-word
+
+# TODO: decide on which of these is better for the default C-w
+set bind-tty-special-chars off
+"\C-w": unix-filename-rubout
+#"\C-w": backward-kill-word
+
+set completion-ignore-case on
+set completion-prefix-display-length 2
+
+"\C-j": menu-complete
+"\C-k": menu-complete-backward
+
+set mark-directories on
+set mark-symlinked-directories on

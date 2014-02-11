@@ -1,0 +1,82 @@
+# functions for working with the sage-combinat queue (pre-git)
+
+## Use vimdiff to view single diffs
+hgdiff() {
+    hg cat $1 | vim - -c  ":vert diffsplit $1" -c "map q :qa!<CR>";
+}
+
+alias mq='hg -R $(hg root)/.hg/patches'
+alias cdmq='cd $(hg root)/.hg/patches'
+
+function sage-combinat() {
+    if [ -z "$SAGE_VERSION" ]; then
+        SAGE_COMMAND=sage
+    else
+        SAGE_COMMAND="sage -v $SAGE_VERSION"
+    fi;
+    case "$1" in
+    root)
+        SAGE_ROOT=$($SAGE_COMMAND --root)
+        SAGE_COMBINAT_ROOT=${SAGE_ROOT}"/devel/sage-combinat"
+        echo $SAGE_COMBINAT_ROOT
+        ;;
+    cd|cdroot)
+        cd $(sage-combinat root)
+        ;;
+    qdir|patches_directory)
+        echo $(sage-combinat root)/.hg/patches
+        ;;
+    q|qcd|mq|qdir)
+        cd $(sage-combinat patches_directory)
+        ;;
+    qs|series)
+        vim $(sage-combinat patches_directory)/series
+        ;;
+    gs|gseries)
+        gvim $(sage-combinat patches_directory)/series
+        ;;
+    qr|qreapply)
+        echo "reapplying queue"
+        sage-combinat cdroot
+        hg qpop -a && hg qpush -a
+        ;;
+    qrb)
+        sage-combinat qreapply
+        echo $SAGE_COMMAND -br
+        ;;
+    help|h|usage|-h|--help)
+        cd $(sage-combinat root)
+        echo "Usage: sage-combinat [options]"
+        echo
+        echo "   root : print sage-combinat root"
+        echo "   cd|cdroot : switch to sage-combinat root"
+        echo "   qdir|patches_directory : print patches directory"
+        echo "   q|qcd : cd patches directory"
+        echo "   qs|series : edit series"
+        echo "   gs|gseries : edit series with gvim"
+        echo "   qr : reapply queue"
+        echo "   qrb : reapply queue and build sage"
+        echo
+        echo "set SAGE_VERSION to specify the version of sage to use"
+        ;;
+    qexport)
+        patchname=$(hg qtop)
+        hg export $patchname > /tmp/$patchname
+        echo "patch exported to /tmp/$patchname"
+        ;;
+    *)
+        cd $(sage-combinat root)/sage
+        ;;
+    esac
+}
+alias sc=sage-combinat
+
+# this needs to be merged with the sage-combinat (sc) function
+function hgqremoveall() {
+    hg qpop -a
+    while hg qnext; do
+        hg qremove `hg qnext`;
+    done;
+}
+
+
