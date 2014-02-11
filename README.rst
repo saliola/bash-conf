@@ -10,7 +10,7 @@ Installation::
 Difference between .bashrc, .bash_profile, .profile
 ----------------------------------------------------
 
-From `Difference between .bashrc and .bash_profile`__:
+From `Difference between .bashrc and .bash_profile`_:
 
 ``~/.profile``: is the place to put stuff that applies to your whole session,
 such as programs that you want to start when you log in (but not graphical
