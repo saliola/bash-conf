@@ -1,9 +1,3 @@
-# prompt
-PROMPT_COMMAND='DIR=`pwd|sed -e "s!$HOME!~!"`; if [ ${#DIR} -gt 58 ]; then CurDir=${DIR:0:12}...${DIR:${#DIR}-43}; else CurDir=$DIR; fi'
-export PS1="
-\[\033[32m\]«$(date +%F)|\[\033[32m\]\t|\[\033[32m\]\${CurDir}»
-\[\033[34m\]\h:\[\033[00m\] "
-
 # git alias (with tab completion)
 alias g='git'
 source $BASHCONF_DIR/scripts/git-completion.bash
