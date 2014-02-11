@@ -1,3 +1,9 @@
+# ls aliases
+alias ls="ls --color=auto"
+alias l="ls"
+alias la="ls -a"
+alias ll="ls -l"
+
 # git alias (with tab completion)
 alias g='git'
 source /usr/share/bash-completion/completions/git

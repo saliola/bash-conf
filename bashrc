@@ -12,10 +12,6 @@
 BASHCONF_DIR=$HOME/.bash-conf
 
 # Some aliases
-alias ls="ls -G --color=auto"
-alias l="ls"
-alias la="ls -a"
-alias ll="ls -l"
 alias s='sage'
 alias m='make'
 alias grep='grep --color=auto'
