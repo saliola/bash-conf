@@ -24,7 +24,7 @@ export PS1="
 
 # set the TERM in tmux so that tmux plays nicely with vim colorscheme
 # https://github.com/krisleech/vimfiles/wiki/Fix-solarized-theme-in-tmux
-alias tmux="TERM=screen-256color-bce /usr/bin/tmux"
+alias tmux="TERM=screen-256color-bce tmux"
 
 # bash my bash "bookmarks" function
 source $BASHCONF_DIR/scripts/go/go.sh
