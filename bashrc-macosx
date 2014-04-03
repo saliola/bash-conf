@@ -10,13 +10,11 @@ source $BASHCONF_DIR/scripts/git-completion.bash
 complete -o default -o nospace -F _git g
 
 # MacVIM
-if [[ -e "/Applications/MacPorts/MacVim.app" ]]; then
-    VIMAPP="/Applications/MacPorts/MacVim.app/Contents/MacOS/Vim"
-else
+if [[ -e "/Applications/MacVim.app" ]]; then
     VIMAPP="/Applications/MacVim.app/Contents/MacOS/Vim"
+    alias vim=$VIMAPP
+    alias vi=$VIMAPP
 fi
-alias vim=$VIMAPP
-alias vi=$VIMAPP
 
 # SKIM
 alias skim="open -a /Applications/Skim.app"
