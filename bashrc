@@ -37,6 +37,8 @@ elif [[ $UNAME == 'Darwin' ]]; then
     source $BASHCONF_DIR/bashrc-macosx
 fi
 
+export EDITOR=vim
+
 #export BROWSER="google-chrome"
 ## Set Firefox as the Sage browser
 #export SAGE_BROWSER="google-chrome"

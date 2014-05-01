@@ -15,7 +15,7 @@
 function go() {
     USAGE="Usage: $FUNCNAME [add|cd|delete|del|edit|help|list|ls] [bookmark]" ;
 
-    GO_BOOKMARKS_DB=~/Dropbox/Code/scripts/go/go_bookmarks_db.txt
+    GO_BOOKMARKS_DB=~/.bash-conf/scripts/go/go_bookmarks_db.txt
 
     if  [ ! -e $GO_BOOKMARKS_DB ] ; then
         touch $GO_BOOKMARKS_DB
