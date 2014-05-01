@@ -46,6 +46,12 @@ m7e -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2013A/exercices"
 m7w -> "$HOME/website/maths/teaching/MAT7600-2013A"
 m7x -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2013A/exercices"
 
+# configuration
+bash-conf -> "$HOME/.bash-conf"
+go -> "$HOME/.bash-conf/scripts/go"
+tmux-conf -> "$HOME/.tmux-conf"
+vim-conf -> "$HOME/.vim"
+
 # general
 articles -> "$HOME/Dropbox/Mathematics/articles"
 courses -> "$HOME/Dropbox/Mathematics/Courses"
@@ -59,9 +65,5 @@ projects -> "$HOME/Dropbox/Mathematics/projects"
 r2r -> "$HOME/Dropbox/Mathematics/projects/random2random"
 website -> "$HOME/website"
 itunes-music -> "$HOME/Music/iTunes/iTunes Media/Music"
-
-# configuration
-bash-conf -> "$HOME/.bash-conf"
-go -> "$HOME/.bash-conf/scripts/go"
-tmux-conf -> "$HOME/.tmux-conf"
-vim-conf -> "$HOME/.vim"
+reports -> "$HOME/Dropbox/uqam/reports"
+uqam -> "$HOME/Dropbox/uqam"
