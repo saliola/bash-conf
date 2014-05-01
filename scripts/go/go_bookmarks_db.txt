@@ -60,6 +60,8 @@ r2r -> "$HOME/Dropbox/Mathematics/projects/random2random"
 website -> "$HOME/website"
 itunes-music -> "$HOME/Music/iTunes/iTunes Media/Music"
 
-# bash-conf
+# configuration
 bash-conf -> "$HOME/.bash-conf"
 go -> "$HOME/.bash-conf/scripts/go"
+tmux-conf -> "$HOME/.tmux-conf"
+vim-conf -> "$HOME/.vim"
