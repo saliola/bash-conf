@@ -18,6 +18,3 @@ fi
 
 # SKIM
 alias skim="open -a /Applications/Skim.app"
-
-## hg configuration
-alias hg='sage -hg'
