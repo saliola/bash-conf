@@ -18,7 +18,7 @@ m2250exercises -> "$HOME/Dropbox/Mathematics/Courses/MAT2250-Theorie-des-groupes
 m2250notes -> "$HOME/Dropbox/Mathematics/Courses/MAT2250-Theorie-des-groupes-2014A/notes de cours"
 m2250resources -> "$HOME/Dropbox/Mathematics/Courses/MAT2250-Theorie-des-groupes-2014A/resources"
 m2 -> "$HOME/Dropbox/Mathematics/Courses/MAT2250-Theorie-des-groupes-2014A"
-m2n -> "$HOME/Dropbox/Mathematics/CoursesMAT2250-Theorie-des-groupes-2014A/notes de cours"
+m2n -> "$HOME/Dropbox/Mathematics/Courses/MAT2250-Theorie-des-groupes-2014A/notes de cours"
 m2r -> "$HOME/Dropbox/Mathematics/Courses/MAT2250-Theorie-des-groupes-2014A/resources"
 m2e -> "$HOME/Dropbox/Mathematics/Courses/MAT2250-Theorie-des-groupes-2014A/exercices"
 m2w -> "$HOME/website/maths/teaching/MAT2250-2014A"
