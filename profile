@@ -10,3 +10,11 @@
 
 ## Add my bin directory to the PATH
 export PATH=~/Applications/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/bin:/usr/texbin
+
+## set keyboard options
+
+# map CapsLock to Control Key
+setxkbmap -option ctrl:nocaps
+
+# map Compose key to menu key
+setxkbmap -option compose:menu
