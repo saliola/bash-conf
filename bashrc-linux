@@ -15,3 +15,8 @@ alias open=/usr/bin/gvfs-open    # gnome-open replacement
 
 # shutter is the new skitch
 alias skitch=/usr/bin/shutter
+
+# turn off gnome-keyring to get rid of the following warning when using git:
+# WARNING: gnome-keyring:: couldn't connect to: /tmp/keyring-...: No such file or directory
+# Reference: http://askubuntu.com/questions/243210/why-do-i-get-this-warning-from-gnome-keyring-in-xubuntu
+unset GNOME_KEYRING_CONTROL
