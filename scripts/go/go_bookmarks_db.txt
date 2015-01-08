@@ -44,9 +44,10 @@ anx -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2015H/exer
 
 # configuration
 bash-conf -> "$HOME/.bash-conf"
-go -> "$HOME/.bash-conf/scripts/go"
 tmux-conf -> "$HOME/.tmux-conf"
 vim-conf -> "$HOME/.vim"
+xmonad -> "$HOME/.xmonad"
+go -> "$HOME/.bash-conf/scripts/go"
 
 # general
 articles -> "$HOME/Dropbox/Mathematics/articles"
