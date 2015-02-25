@@ -17,8 +17,8 @@ set bind-tty-special-chars off
 set completion-ignore-case on
 set completion-prefix-display-length 2
 
-"\C-j": menu-complete
-"\C-k": menu-complete-backward
+# "\C-j": menu-complete
+# "\C-k": menu-complete-backward
 
 set mark-directories on
 set mark-symlinked-directories on
