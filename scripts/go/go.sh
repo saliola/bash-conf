@@ -12,6 +12,12 @@
 # To make things more portable, it is better to use ~ of $HOME instead of
 # /home/username. This script substitutes ~ for $HOME when creating bookmarks.
 
+cecho() {
+    tput setaf 5
+    echo "$1"
+    tput sgr0
+}
+
 function go() {
     USAGE="Usage: $FUNCNAME [add|cd|delete|del|edit|help|list|ls] [bookmark]" ;
 
@@ -32,31 +38,37 @@ function go() {
             TEST_BOOKMARK=$(grep -e "^$BOOKMARK ->" $GO_BOOKMARKS_DB)
             if [ -z "$TEST_BOOKMARK" ] ; then
                 TARGET=${PWD/$HOME/\$HOME}
-                echo "$FUNCNAME: add bookmark: $BOOKMARK -> $TARGET"
-                echo "$BOOKMARK -> \"$TARGET\"" >> $GO_BOOKMARKS_DB
+                cecho "$FUNCNAME: add bookmark: $BOOKMARK -> $TARGET"
+                cecho "$BOOKMARK -> \"$TARGET\"" >> $GO_BOOKMARKS_DB
             else
-                echo "$FUNCNAME: Bookmark already exists: $BOOKMARK" ;
+                cecho "$FUNCNAME: Bookmark already exists: $BOOKMARK" ;
             fi
             ;;
 
         cd) shift
             BOOKMARK=$(grep -e "^$1 ->" $GO_BOOKMARKS_DB)
             if [ -z "$BOOKMARK" ] ; then
-                echo "$FUNCNAME: Bookmark does not exist: $1" ;
+                cecho "$FUNCNAME: Bookmark does not exist: $1" ;
             else
                 NEWDIR=$(echo $BOOKMARK | sed 's/^.*-> //')
-                echo "$FUNCNAME: cd $NEWDIR"
+                cecho "$FUNCNAME: cd $NEWDIR"
                 eval "cd $NEWDIR"
             fi
+            ;;
+
+        cd_subdir) shift
+            go cd $1
+            cecho "$FUNCNAME: cd $2"
+            eval "cd $2"
             ;;
 
         delete) shift
             BOOKMARK=$(grep -e "^$1 ->" $GO_BOOKMARKS_DB)
             if [ -z "$BOOKMARK" ] ; then
-                echo "$FUNCNAME: No such bookmark: $1" ;
+                cecho "$FUNCNAME: No such bookmark: $1" ;
             else
                 sed -i.bak "/^$1 ->/d" $GO_BOOKMARKS_DB
-                echo "$FUNCNAME: delete bookmark: $BOOKMARK"
+                cecho "$FUNCNAME: delete bookmark: $BOOKMARK"
             fi
             ;;
 
@@ -83,12 +95,17 @@ function go() {
             $FUNCNAME list ;
             ;;
 
-        # otherwise: list if no arguments ; else cd to bookmark
+        # otherwise:
+        # - list bookmarks, if no arguments
+        # - cd to bookmark, if one argument
+        # - cd to subdirectory
         *)
             if [ -z "$1" ] ; then
                 $FUNCNAME list ;
-            else
+            elif [ -z "$2" ] ; then
                 $FUNCNAME cd $1 ;
+            else
+                $FUNCNAME cd_subdir $1 $2 ;
             fi;
 
     esac
@@ -96,10 +113,31 @@ function go() {
 
 _go()
 {
-    local cur
+    local cur pre
+
+    COMPREPLY=()
     cur=${COMP_WORDS[COMP_CWORD]}
-    BOOKMARKS=$(cat $(go go_database_file) | sed 's/ ->.*$//')
-    COMPREPLY=($(compgen -W "$BOOKMARKS" -- $cur))
+    pre=${COMP_WORDS[COMP_CWORD-1]}
+
+    if [ $COMP_CWORD -eq 1 ]; then
+        BOOKMARKS=$(cat $(go go_database_file) | sed 's/ ->.*$//')
+        # BOOKMARKS=$(grep -ve '^#' $GO_BOOKMARKS_DB | sed 's/ ->.*$//')
+        COMPREPLY=( $(compgen -W "$BOOKMARKS" -- $cur) )
+    elif [ $COMP_CWORD -eq 2 ]; then
+        # go $pre >/dev/null
+        # _filedir
+        BOOKMARK=$(grep -e "^$pre ->" $(go go_database_file))
+        if [ -z "$BOOKMARK" ] ; then
+            COMPREPLY=()
+        else
+            TARGET_DIR=$(echo $BOOKMARK | sed 's/^.*-> //')
+            eval "cd $TARGET_DIR"
+            _filedir
+        fi
+    else
+        COMPREPLY=()
+    fi
+
     return 0
 }
 
