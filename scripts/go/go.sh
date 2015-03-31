@@ -57,9 +57,8 @@ function go() {
             ;;
 
         cd_subdir) shift
-            go cd $1
-            cecho "$FUNCNAME: cd $2"
-            eval "cd $2"
+            cecho "$FUNCNAME: cd \"$@\""
+            eval "cd \"$@\""
             ;;
 
         delete) shift
@@ -105,7 +104,9 @@ function go() {
             elif [ -z "$2" ] ; then
                 $FUNCNAME cd $1 ;
             else
-                $FUNCNAME cd_subdir $1 $2 ;
+                go cd $1
+                shift
+                $FUNCNAME cd_subdir "$@" ;
             fi;
 
     esac
