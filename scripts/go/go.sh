@@ -39,7 +39,7 @@ function go() {
             if [ -z "$TEST_BOOKMARK" ] ; then
                 TARGET=${PWD/$HOME/\$HOME}
                 cecho "$FUNCNAME: add bookmark: $BOOKMARK -> $TARGET"
-                cecho "$BOOKMARK -> \"$TARGET\"" >> $GO_BOOKMARKS_DB
+                echo "$BOOKMARK -> \"$TARGET\"" >> $GO_BOOKMARKS_DB
             else
                 cecho "$FUNCNAME: Bookmark already exists: $BOOKMARK" ;
             fi
