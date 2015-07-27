@@ -122,11 +122,8 @@ _go()
 
     if [ $COMP_CWORD -eq 1 ]; then
         BOOKMARKS=$(cat $(go go_database_file) | sed 's/ ->.*$//')
-        # BOOKMARKS=$(grep -ve '^#' $GO_BOOKMARKS_DB | sed 's/ ->.*$//')
         COMPREPLY=( $(compgen -W "$BOOKMARKS" -- $cur) )
     elif [ $COMP_CWORD -eq 2 ]; then
-        # go $pre >/dev/null
-        # _filedir
         BOOKMARK=$(grep -e "^$pre ->" $(go go_database_file))
         if [ -z "$BOOKMARK" ] ; then
             COMPREPLY=()
