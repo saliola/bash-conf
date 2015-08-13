@@ -47,7 +47,8 @@ bash-conf -> "$HOME/.bash-conf"
 tmux-conf -> "$HOME/.tmux-conf"
 vim-conf -> "$HOME/.vim"
 xmonad -> "$HOME/.xmonad"
-go -> "$HOME/.bash-conf/scripts/go"
+jump -> "$HOME/.bash-conf/scripts/jump"
+j -> "$HOME/.bash-conf/scripts/jump"
 
 # general
 articles -> "$HOME/Dropbox/Mathematics/articles"

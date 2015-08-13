@@ -27,7 +27,7 @@ export PS1="
 alias tmux="TERM=screen-256color-bce tmux"
 
 # bash my bash "bookmarks" function
-source $BASHCONF_DIR/scripts/go/go.sh
+source $BASHCONF_DIR/scripts/jump/jump.sh
 
 # source platform dependant configs
 UNAME=$(uname)
