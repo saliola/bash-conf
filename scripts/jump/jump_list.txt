@@ -48,6 +48,13 @@ website -> "$HOME/website"
 itunes-music -> "$HOME/Music/iTunes/iTunes Media/Music"
 Applications -> "$HOME/Applications"
 sage-root -> "$HOME/Applications/sage-dev"
+ebooks -> "$HOME/Dropbox/eBooks"
+
+# uqam
+uqam -> "$HOME/Dropbox/uqam"
+reports -> "$HOME/Dropbox/uqam/reports"
+reference-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
+recommendation-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
 
 # projects
 r2r -> "$HOME/Dropbox/Mathematics/projects/random2random"
@@ -56,8 +63,3 @@ lrb -> "$HOME/Dropbox/Mathematics/articles/lrbs"
 nserc -> "$HOME/Dropbox/Mathematics/Grants/NSERC-Discovery-Grant-2015"
 talks -> "$HOME/Dropbox/Mathematics/Talks"
 
-# uqam
-uqam -> "$HOME/Dropbox/uqam"
-reports -> "$HOME/Dropbox/uqam/reports"
-reference-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
-recommendation-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
