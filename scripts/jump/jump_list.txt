@@ -8,7 +8,8 @@ MAT3100 -> "$HOME/Dropbox/Mathematics/Courses/MAT3100-Modules-et-Representations
 MAT5920-2013 -> "$HOME/Dropbox/Mathematics/Courses/MAT5920-Seminaire-II-2013H"
 MAT5920-2014 -> "$HOME/Dropbox/Mathematics/Courses/MAT5920-Seminaire-II-2014H"
 MAT7200 -> "$HOME/Dropbox/Mathematics/Courses/MAT7200-Algebre-Homologique-2013H"
-MAT7600 -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2013A"
+MAT7600 -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A"
+MAT7600-2013 -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2013A"
 MAT8882 -> "$HOME/Dropbox/Mathematics/Courses/MAT8882-Representations-des-algebres-2010A"
 MAT9440 -> "$HOME/Dropbox/Mathematics/Courses/MAT9440-Algebre-computationnelle"
 MAT995C -> "$HOME/Dropbox/Mathematics/Courses/MAT995C-Seminaire-de-combinatoire-2011H"
@@ -16,31 +17,15 @@ MAT995F -> "$HOME/Dropbox/Mathematics/Courses/MAT995F-Algebre-de-Hopf-combinatoi
 MAT995H -> "$HOME/Dropbox/Mathematics/Courses/MAT995H-Seminaire-de-combinatoire-2014H"
 Math1310 -> "$HOME/Dropbox/Mathematics/Courses/Math1310-Integeral-calculus-with-applications-2010W"
 
-# MAT2160 : Analyse Complexe
-mat2160 -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2015H/"
-mat2260exercises -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2015H/exercices"
-mat2260notes -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2015H/notes de cours"
-mat2260resources -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2015H/resources"
+# MAT7600 : Algèbre
+mat7600 -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A"
+m7600 -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A"
 
-ac -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2015H"
-acn -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2015H/notes de cours"
-acr -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2015H/resources"
-ace -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2015H/exercices"
-acw -> "$HOME/website/maths/teaching/MAT2160-2015H"
-acx -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2015H/exercices"
-
-# MAT2260 : Theorie des Anneaux
-mat2260 -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2015H/"
-mat2260exercises -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2015H/exercices"
-mat2260notes -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2015H/notes de cours"
-mat2260resources -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2015H/resources"
-
-an -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2015H"
-ann -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2015H/notes de cours"
-anr -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2015H/resources"
-ane -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2015H/exercices"
-anw -> "$HOME/website/maths/teaching/MAT2260-2015H"
-anx -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2015H/exercices"
+al  -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A"
+aln -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A/notes de cours"
+alr -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A/resources"
+ale -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A/exercices"
+acw -> "$HOME/website/maths/teaching/MAT7600-2015A"
 
 # configuration
 bash-conf -> "$HOME/.bash-conf"
@@ -57,15 +42,22 @@ db -> "$HOME/Dropbox"
 dropbox -> "$HOME/Dropbox"
 Dropbox -> "$HOME/Dropbox"
 dl -> "$HOME/Downloads"
-fpsac -> "$HOME/Dropbox/Mathematics/articles/lrbs/FPSAC2014"
 notes -> "$HOME/Dropbox/notes"
 projects -> "$HOME/Dropbox/Mathematics/projects"
-r2r -> "$HOME/Dropbox/Mathematics/projects/random2random"
 website -> "$HOME/website"
 itunes-music -> "$HOME/Music/iTunes/iTunes Media/Music"
-reports -> "$HOME/Dropbox/uqam/reports"
-uqam -> "$HOME/Dropbox/uqam"
 Applications -> "$HOME/Applications"
 sage-root -> "$HOME/Applications/sage-dev"
+
+# projects
+r2r -> "$HOME/Dropbox/Mathematics/projects/random2random"
+imm -> "$HOME/Dropbox/Mathematics/articles/Immaculate"
+lrb -> "$HOME/Dropbox/Mathematics/articles/lrbs"
 nserc -> "$HOME/Dropbox/Mathematics/Grants/NSERC-Discovery-Grant-2015"
 talks -> "$HOME/Dropbox/Mathematics/Talks"
+
+# uqam
+uqam -> "$HOME/Dropbox/uqam"
+reports -> "$HOME/Dropbox/uqam/reports"
+reference-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
+recommendation-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
