@@ -1,0 +1,13 @@
+
+# alias g='git' # defined in bashrc-macosx and bashrc-linux
+
+alias grep='grep --color=auto'
+
+alias m='make'
+
+alias s='sage'
+
+# set the TERM in tmux so that tmux plays nicely with vim colorscheme
+# https://github.com/krisleech/vimfiles/wiki/Fix-solarized-theme-in-tmux
+alias tmux="TERM=screen-256color-bce tmux"
+alias t="TERM=screen-256color-bce tmux"

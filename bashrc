@@ -9,25 +9,32 @@
 #
 # .. _`Difference between .bashrc and .bash_profile`: http://superuser.com/questions/183870/difference-between-bashrc-and-bash-profile/183980
 
+
+##################################
+#  bash configuration directory  #
+##################################
+
 BASHCONF_DIR=$HOME/.bash-conf
 
-# Some aliases
-alias s='sage'
-alias m='make'
-alias grep='grep --color=auto'
+############
+#  prompt  #
+############
 
-# prompt
 PROMPT_COMMAND='DIR=`pwd|sed -e "s!$HOME!~!"`; if [ ${#DIR} -gt 58 ]; then CurDir=${DIR:0:12}...${DIR:${#DIR}-43}; else CurDir=$DIR; fi'
 export PS1="
 \[\033[32m\]«$(date +%F)|\[\033[32m\]\t|\[\033[32m\]\${CurDir}»
 \[\033[34m\]\h:\[\033[00m\] "
 
-# set the TERM in tmux so that tmux plays nicely with vim colorscheme
-# https://github.com/krisleech/vimfiles/wiki/Fix-solarized-theme-in-tmux
-alias tmux="TERM=screen-256color-bce tmux"
+########################
+#  bookmarks/jumplist  #
+########################
 
-# bash my bash "bookmarks" function
+# source my bash "bookmarks" function
 source $BASHCONF_DIR/scripts/jump/jump.sh
+
+######################################
+#  platform specific configurations  #
+######################################
 
 # source platform dependant configs
 UNAME=$(uname)
@@ -37,9 +44,20 @@ elif [[ $UNAME == 'Darwin' ]]; then
     source $BASHCONF_DIR/bashrc-macosx
 fi
 
+#############
+#  aliases  #
+#############
+
+# source aliases file
+source $BASHCONF_DIR/bashrc-aliases
+
+#############
+#  exports  #
+#############
+
 export EDITOR=vim
 
 #export BROWSER="google-chrome"
+
 ## Set Firefox as the Sage browser
 #export SAGE_BROWSER="google-chrome"
-
