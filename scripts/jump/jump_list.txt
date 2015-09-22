@@ -21,11 +21,11 @@ Math1310 -> "$HOME/Dropbox/Mathematics/Courses/Math1310-Integeral-calculus-with-
 mat7600 -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A"
 m7600 -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A"
 
-al  -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A"
+al -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A"
 aln -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A/notes de cours"
 alr -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A/resources"
 ale -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A/exercices"
-acw -> "$HOME/website/maths/teaching/MAT7600-2015A"
+alw -> "$HOME/website/maths/teaching/MAT7600-2015A"
 
 # configuration
 bash-conf -> "$HOME/.bash-conf"
@@ -63,3 +63,4 @@ lrb -> "$HOME/Dropbox/Mathematics/articles/lrbs"
 nserc -> "$HOME/Dropbox/Mathematics/Grants/NSERC-Discovery-Grant-2015"
 talks -> "$HOME/Dropbox/Mathematics/Talks"
 
+putnam -> "$HOME/Dropbox/uqam/Putnam/Putnam2015"
