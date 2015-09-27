@@ -1,6 +1,8 @@
 
 # alias g='git' # defined in bashrc-macosx and bashrc-linux
 
+alias h='hg' #
+
 alias grep='grep --color=auto'
 
 alias m='make'
