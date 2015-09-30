@@ -6,6 +6,9 @@ alias h='hg' #
 alias grep='grep --color=auto'
 
 alias m='make'
+alias mu='mupdf'
+
+alias o='/usr/bin/gvfs-open'
 
 alias s='sage'
 
