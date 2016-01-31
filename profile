@@ -10,3 +10,17 @@
 
 ## Add my bin directory to the PATH
 export PATH=~/Applications/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/bin:/usr/texbin
+
+## Configure special keys
+
+# clear settings
+setxkbmap -option
+
+# map CapsLock to Ctrl
+setxkbmap -option ctrl:nocaps
+
+# set left Ctrl as Compose key
+setxkbmap -option compose:lctrl
+
+# swap Alt and Command keys (on Mac Keyboard)
+setxkbmap -option altwin:swap_alt_win
