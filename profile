@@ -22,5 +22,8 @@ setxkbmap -option ctrl:nocaps
 # set left Ctrl as Compose key
 setxkbmap -option compose:lctrl
 
-# swap Alt and Command keys (on Mac Keyboard)
-setxkbmap -option altwin:swap_alt_win
+# swap Alt and Command keys on the Mac Keyboard
+HOSTNAME=$(hostname)
+if [ $HOSTNAME = "macbookpro" ]; then
+    setxkbmap -option altwin:swap_alt_win
+fi
