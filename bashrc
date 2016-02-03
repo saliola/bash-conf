@@ -22,7 +22,7 @@ BASHCONF_DIR=$HOME/.bash-conf
 
 PROMPT_COMMAND='DIR=`pwd|sed -e "s!$HOME!~!"`; if [ ${#DIR} -gt 58 ]; then CurDir=${DIR:0:12}...${DIR:${#DIR}-43}; else CurDir=$DIR; fi'
 export PS1="
-\[\033[32m\]«$(date +%F)|\[\033[32m\]\t|\[\033[32m\]\${CurDir}»
+\[\033[32m\]«\D{%Y-%m-%d}|\[\033[32m\]\t|\[\033[32m\]\${CurDir}»
 \[\033[34m\]\h:\[\033[00m\] "
 
 ########################
