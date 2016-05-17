@@ -69,7 +69,7 @@ reference-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
 recommendation-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
 
 # projects
-r2r -> "$HOME/Dropbox/Mathematics/projects/random2random"
+r2r -> "$HOME/Dropbox/Mathematics/projects/random-to-random"
 imm -> "$HOME/Dropbox/Mathematics/articles/Immaculate"
 lrb -> "$HOME/Dropbox/Mathematics/articles/lrbs"
 talks -> "$HOME/Dropbox/Mathematics/Talks"
