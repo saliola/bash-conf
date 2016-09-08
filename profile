@@ -9,4 +9,14 @@
 # .. _`Difference between .bashrc and .bash_profile`: http://superuser.com/questions/183870/difference-between-bashrc-and-bash-profile/183980
 
 ## Add my bin directory to the PATH
-export PATH=~/Applications/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/bin:/usr/texbin
+PATH=~/Applications/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/bin
+
+# source platform dependant configs
+UNAME=$(uname)
+if [[ $UNAME == 'Linux' ]]; then
+    PATH=$PATH:/usr/texbin
+elif [[ $UNAME == 'Darwin' ]]; then
+    PATH=$PATH:/Library/TeX/texbin
+fi
+
+export PATH=$PATH
