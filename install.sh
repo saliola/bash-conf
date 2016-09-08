@@ -10,6 +10,8 @@ set -e
 
 BASHCONF_DIR=~/.bash-conf
 
+rm -f ~/.bashrc ~/.profile ~/.bash_profile ~/.inputrc
+
 ln -s $BASHCONF_DIR/bashrc          ~/.bashrc
 ln -s $BASHCONF_DIR/profile         ~/.profile
 ln -s $BASHCONF_DIR/bash_profile    ~/.bash_profile
