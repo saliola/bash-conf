@@ -8,32 +8,27 @@
 #
 # .. _`Difference between .bashrc and .bash_profile`: http://superuser.com/questions/183870/difference-between-bashrc-and-bash-profile/183980
 
+##################################
+#  bash configuration directory  #
+##################################
+
+BASHCONF_DIR=$HOME/.bash-conf
+
+#######################################
+#  Set the PATH environment variable  #
+#######################################
+
 ## Add my bin directory to the PATH
-PATH=~/Applications/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/bin
+export PATH=~/Applications/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/bin
+
+###########################################
+#  Load platform specific configurations  #
+###########################################
 
 # source platform dependant configs
 UNAME=$(uname)
 if [[ $UNAME == 'Linux' ]]; then
-    PATH=$PATH:/usr/texbin
+    source $BASHCONF_DIR/profile-linux
 elif [[ $UNAME == 'Darwin' ]]; then
-    PATH=$PATH:/Library/TeX/texbin
-fi
-
-export PATH=$PATH
-
-## Configure special keys
-
-# clear settings
-setxkbmap -option
-
-# map CapsLock to Ctrl
-setxkbmap -option ctrl:nocaps
-
-# set left Ctrl as Compose key
-setxkbmap -option compose:lctrl
-
-# swap Alt and Command keys on the Mac Keyboard
-HOSTNAME=$(hostname)
-if [ $HOSTNAME = "macbookpro" ]; then
-    setxkbmap -option altwin:swap_alt_win
+    source $BASHCONF_DIR/profile-macosx
 fi
