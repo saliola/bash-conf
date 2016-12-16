@@ -17,28 +17,6 @@ MAT995F -> "$HOME/Dropbox/Mathematics/Courses/MAT995F-Algebre-de-Hopf-combinatoi
 MAT995H -> "$HOME/Dropbox/Mathematics/Courses/MAT995H-Seminaire-de-combinatoire-2014H"
 Math1310 -> "$HOME/Dropbox/Mathematics/Courses/Math1310-Integeral-calculus-with-applications-2010W"
 
-# CURRENT COURSES
-# MAT2160 - 2016
-2160 -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2016H"
-m2160 -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2016H"
-ca -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2016H"
-can -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2016H/notes de cours"
-car -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2016H/resources"
-cae -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2016H/exercices"
-caw -> "$HOME/website/maths/teaching/MAT2160-2016H"
-cae-old -> "$HOME/Dropbox/Mathematics/Courses/MAT2160-Analyse-Complexe-2015H/exercices"
-
-# CURRENT COURSES
-# MAT2260 - 2016
-2260 -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2016H"
-m2260 -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2016H"
-rt -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2016H"
-rtn -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2016H/notes de cours"
-rtr -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2016H/resources"
-rte -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2016H/exercices"
-rtw -> "$HOME/website/maths/teaching/MAT2260-2016H"
-rte-old -> "$HOME/Dropbox/Mathematics/Courses/MAT2260-Theorie-des-anneaux-2015H/exercices"
-
 # configuration
 bash-conf -> "$HOME/.bash-conf"
 tmux-conf -> "$HOME/.tmux-conf"
@@ -54,6 +32,7 @@ db -> "$HOME/Dropbox"
 dropbox -> "$HOME/Dropbox"
 Dropbox -> "$HOME/Dropbox"
 dl -> "$HOME/Downloads"
+downloads -> "$HOME/Downloads"
 notes -> "$HOME/Dropbox/notes"
 projects -> "$HOME/Dropbox/Mathematics/projects"
 website -> "$HOME/website"
@@ -67,6 +46,11 @@ uqam -> "$HOME/Dropbox/uqam"
 reports -> "$HOME/Dropbox/uqam/reports"
 reference-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
 recommendation-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
+advising -> "$HOME/Dropbox/uqam/advising"
+
+# CRM
+ec -> "$HOME/Dropbox/uqam/SemestreThématique2017/EquivariantCombinatorics"
+crm -> "$HOME/Dropbox/uqam/SemestreThématique2017/"
 
 # projects
 r2r -> "$HOME/Dropbox/Mathematics/projects/random-to-random"
