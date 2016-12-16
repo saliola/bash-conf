@@ -1,6 +1,13 @@
 # bash completion
 if [ -f /usr/local/etc/bash_completion ]; then
     source /usr/local/etc/bash_completion
+elif [ -f /opt/bash-completion/etc/bash_completion ]; then
+    # set environment variables to relocate the bash_completion script
+    BASH_COMPLETION_ROOT_DIR=/opt/bash-completion
+    BASH_COMPLETION=${BASH_COMPLETION_ROOT_DIR}/etc/bash_completion
+    BASH_COMPLETION_DIR=${BASH_COMPLETION_ROOT_DIR}/etc/bash_completion.d
+    BASH_COMPLETION_COMPAT_DIR=${BASH_COMPLETION_ROOT_DIR}/etc/bash_completion.d
+    source /opt/bash-completion/etc/bash_completion
 fi
 
 # ls aliases
