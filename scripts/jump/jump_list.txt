@@ -25,21 +25,30 @@ xmonad -> "$HOME/.xmonad"
 jump -> "$HOME/.bash-conf/scripts/jump"
 j -> "$HOME/.bash-conf/scripts/jump"
 
-# general
-articles -> "$HOME/Dropbox/Mathematics/articles"
-courses -> "$HOME/Dropbox/Mathematics/Courses"
-db -> "$HOME/Dropbox"
-dropbox -> "$HOME/Dropbox"
-Dropbox -> "$HOME/Dropbox"
+# application directories
+apps -> "$HOME/Applications"
+sage -> "$HOME/Applications/sage"
+itunes-music -> "$HOME/Music/iTunes/iTunes Media/Music"
+
+# download directory
 dl -> "$HOME/Downloads"
 downloads -> "$HOME/Downloads"
-notes -> "$HOME/Dropbox/notes"
-projects -> "$HOME/Dropbox/Mathematics/projects"
-website -> "$HOME/website"
-itunes-music -> "$HOME/Music/iTunes/iTunes Media/Music"
-Applications -> "$HOME/Applications"
-sage-root -> "$HOME/Applications/sage-dev"
+
+# dropbox
+Dropbox -> "$HOME/Dropbox"
+db -> "$HOME/Dropbox"
+dropbox -> "$HOME/Dropbox"
 ebooks -> "$HOME/Dropbox/eBooks"
+notes -> "$HOME/Dropbox/notes"
+math -> "$HOME/Dropbox/Mathematics"
+articles -> "$HOME/Dropbox/Mathematics/articles"
+courses -> "$HOME/Dropbox/Mathematics/Courses"
+grants -> "$HOME/Dropbox/Mathematics/Grants"
+projects -> "$HOME/Dropbox/Mathematics/projects"
+reviews -> "$HOME/Dropbox/Mathematics/reviews"
+talks -> "$HOME/Dropbox/Mathematics/Talks"
+
+website -> "$HOME/website"
 
 # uqam
 uqam -> "$HOME/Dropbox/uqam"
@@ -49,11 +58,12 @@ recommendation-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
 advising -> "$HOME/Dropbox/uqam/advising"
 
 # CRM
-ec -> "$HOME/Dropbox/uqam/SemestreThématique2017/EquivariantCombinatorics"
-crm -> "$HOME/Dropbox/uqam/SemestreThématique2017/"
+ec -> "$HOME/Dropbox/uqam/SemestreThematique2017/EquivariantCombinatorics"
+crm -> "$HOME/Dropbox/uqam/SemestreThematique2017/"
 
 # projects
-r2r -> "$HOME/Dropbox/Mathematics/projects/random-to-random"
 imm -> "$HOME/Dropbox/Mathematics/articles/Immaculate"
 lrb -> "$HOME/Dropbox/Mathematics/articles/lrbs"
-talks -> "$HOME/Dropbox/Mathematics/Talks"
+pleth -> "$HOME/Dropbox/Mathematics/projects/plethysm"
+qmn -> "$HOME/Dropbox/Mathematics/articles/quantum-mn-rule"
+r2r -> "$HOME/Dropbox/Mathematics/projects/random-to-random"
