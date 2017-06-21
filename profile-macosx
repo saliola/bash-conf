@@ -8,3 +8,10 @@ PATH=${PATH%:\/usr\/texbin\//}
 # add /Library/TeX/texbin to PATH
 PATH=$PATH:/Library/TeX/texbin
 export PATH=$PATH
+
+#############################
+#  Set PATH for Python 3.4  #
+#############################
+
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
