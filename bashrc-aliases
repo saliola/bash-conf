@@ -42,3 +42,7 @@ add_alias o "/usr/bin/gvfs-open" "open"
 # https://github.com/krisleech/vimfiles/wiki/Fix-solarized-theme-in-tmux
 add_alias tmux "TERM=screen-256color-bce tmux"
 add_alias t "TERM=screen-256color-bce tmux"
+
+function cd {
+    builtin cd "$@" && ls --color=auto -F
+}
