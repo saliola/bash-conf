@@ -19,7 +19,7 @@ cecho() {
 }
 
 function jj() {
-    cd $HOME
+    builtin cd $HOME
 }
 
 function j() {
@@ -56,13 +56,13 @@ function j() {
             else
                 NEWDIR=$(echo $BOOKMARK | sed 's/^.*-> //')
                 cecho "$FUNCNAME: cd $NEWDIR"
-                eval "cd $NEWDIR"
+                eval "builtin cd $NEWDIR"
             fi
             ;;
 
         cd_subdir) shift
             cecho "$FUNCNAME: cd \"$@\""
-            eval "cd \"$@\""
+            eval "builtin cd \"$@\""
             ;;
 
         delete) shift
@@ -133,7 +133,7 @@ _j()
             COMPREPLY=()
         else
             TARGET_DIR=$(echo $BOOKMARK | sed 's/^.*-> //')
-            eval "cd $TARGET_DIR"
+            eval "builtin cd $TARGET_DIR"
             _filedir
         fi
     else
