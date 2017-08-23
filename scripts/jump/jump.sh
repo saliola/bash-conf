@@ -55,13 +55,13 @@ function j() {
                 cecho "$FUNCNAME: Bookmark does not exist: $1" ;
             else
                 NEWDIR=$(echo $BOOKMARK | sed 's/^.*-> //')
-                cecho "$FUNCNAME: cd $NEWDIR"
+                # cecho "$FUNCNAME: cd $NEWDIR"
                 eval "builtin cd $NEWDIR"
             fi
             ;;
 
         cd_subdir) shift
-            cecho "$FUNCNAME: cd \"$@\""
+            # cecho "$FUNCNAME: cd \"$@\""
             eval "builtin cd \"$@\""
             ;;
 
@@ -107,10 +107,12 @@ function j() {
                 $FUNCNAME list ;
             elif [ -z "$2" ] ; then
                 $FUNCNAME cd $1 ;
+                ls ;
             else
                 j cd $1
                 shift
                 $FUNCNAME cd_subdir "$@" ;
+                ls ;
             fi;
 
     esac
