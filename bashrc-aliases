@@ -49,6 +49,8 @@ add_alias lrt "ls --color=auto -lrt" "ls -G -lrt"
 add_alias tmux "TERM=screen-256color-bce tmux"
 add_alias t "TERM=screen-256color-bce tmux"
 
+# combine cd and ls into one command;
+# NOTE: use `builtin cd` to access the builtin command
 function cd {
-    builtin cd "$@" && ls --color=auto -F
+    builtin cd "$@" && ls
 }
