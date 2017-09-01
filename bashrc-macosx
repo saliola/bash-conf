@@ -10,12 +10,6 @@ elif [ -f /opt/bash-completion/etc/bash_completion ]; then
     source /opt/bash-completion/etc/bash_completion
 fi
 
-# ls aliases
-alias ls="ls -G"
-alias l="ls"
-alias la="ls -a"
-alias ll="ls -l"
-
 # git alias (with tab completion)
 alias g='git'
 source $BASHCONF_DIR/scripts/git-completion.bash

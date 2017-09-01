@@ -19,7 +19,7 @@ cecho() {
 }
 
 function jj() {
-    cd $HOME
+    builtin cd $HOME
 }
 
 function j() {
@@ -55,14 +55,14 @@ function j() {
                 cecho "$FUNCNAME: Bookmark does not exist: $1" ;
             else
                 NEWDIR=$(echo $BOOKMARK | sed 's/^.*-> //')
-                cecho "$FUNCNAME: cd $NEWDIR"
-                eval "cd $NEWDIR"
+                # cecho "$FUNCNAME: cd $NEWDIR"
+                eval "builtin cd $NEWDIR"
             fi
             ;;
 
         cd_subdir) shift
-            cecho "$FUNCNAME: cd \"$@\""
-            eval "cd \"$@\""
+            # cecho "$FUNCNAME: cd \"$@\""
+            eval "builtin cd \"$@\""
             ;;
 
         delete) shift
@@ -107,10 +107,12 @@ function j() {
                 $FUNCNAME list ;
             elif [ -z "$2" ] ; then
                 $FUNCNAME cd $1 ;
+                ls ;
             else
                 j cd $1
                 shift
                 $FUNCNAME cd_subdir "$@" ;
+                ls ;
             fi;
 
     esac
@@ -133,7 +135,7 @@ _j()
             COMPREPLY=()
         else
             TARGET_DIR=$(echo $BOOKMARK | sed 's/^.*-> //')
-            eval "cd $TARGET_DIR"
+            eval "builtin cd $TARGET_DIR"
             _filedir
         fi
     else

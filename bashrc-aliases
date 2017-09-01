@@ -38,7 +38,19 @@ add_alias s "sage"
 
 add_alias o "/usr/bin/gvfs-open" "open"
 
+add_alias l "ls --color=auto" "ls -G"
+add_alias ls "ls --color=auto" "ls -G"
+add_alias la "ls --color=auto -a" "ls -G a"
+add_alias ll "ls --color=auto -lsh" "ls -G -lsh"
+add_alias lrt "ls --color=auto -lrt" "ls -G -lrt"
+
 # set the TERM in tmux so that tmux plays nicely with vim colorscheme
 # https://github.com/krisleech/vimfiles/wiki/Fix-solarized-theme-in-tmux
 add_alias tmux "TERM=screen-256color-bce tmux"
 add_alias t "TERM=screen-256color-bce tmux"
+
+# combine cd and ls into one command;
+# NOTE: use `builtin cd` to access the builtin command
+function cd {
+    builtin cd "$@" && ls
+}
