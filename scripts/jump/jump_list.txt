@@ -16,6 +16,12 @@ MAT995C -> "$HOME/Dropbox/Mathematics/Courses/MAT995C-Seminaire-de-combinatoire-
 MAT995F -> "$HOME/Dropbox/Mathematics/Courses/MAT995F-Algebre-de-Hopf-combinatoire-2013H"
 MAT995H -> "$HOME/Dropbox/Mathematics/Courses/MAT995H-Seminaire-de-combinatoire-2014H"
 Math1310 -> "$HOME/Dropbox/Mathematics/Courses/Math1310-Integeral-calculus-with-applications-2010W"
+MAT7431 -> "$HOME/Dropbox/Mathematics/Courses/MAT7431-Geometrie-et-combinatoire-2017A"
+MAT3505 -> "$HOME/Dropbox/Mathematics/Courses/MAT3505-Seminaire-de-mathematiques-2017A"
+m7 -> "$HOME/Dropbox/Mathematics/Courses/MAT7431-Geometrie-et-combinatoire-2017A"
+m7w -> "/home/saliola/website/maths/teaching/MAT7431-2017A"
+m3 -> "$HOME/Dropbox/Mathematics/Courses/MAT3505-Seminaire-de-mathematiques-2017A"
+m3w -> "/home/saliola/website/maths/teaching/MAT3505-2017A"
 
 # configuration
 bash-conf -> "$HOME/.bash-conf"
