@@ -32,6 +32,12 @@ export PS1="
 # source my bash "bookmarks" function
 source $BASHCONF_DIR/scripts/jump/jump.sh
 
+##################
+#  sage scripts  #
+##################
+
+source $BASHCONF_DIR/scripts/sage-viewer-dir.bash
+
 ######################################
 #  platform specific configurations  #
 ######################################
