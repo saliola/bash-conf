@@ -32,7 +32,7 @@ add_alias grep "grep --color=auto"
 
 add_alias m "make"
 
-add_alias mu "mupdf" "open -a Skim.app"
+add_alias mu "mupdf" "mupdf"
 
 add_alias s "sage"
 
