@@ -1,10 +1,9 @@
 # current courses and references
-m5 -> "$HOME/Dropbox/Mathematics/Courses/MAT5920-Seminaire-II-2014H"
-m5w -> "$HOME/website/maths/teaching/MAT5920-2014H"
-m7 -> "$HOME/Dropbox/Mathematics/Courses/MAT7431-Geometrie-et-combinatoire-2017A"
-m7w -> "$HOME/website/maths/teaching/MAT7431-2017A"
-m3 -> "$HOME/Dropbox/Mathematics/Courses/MAT3505-Seminaire-de-mathematiques-2017A"
-m3w -> "$HOME/website/maths/teaching/MAT3505-2017A"
+m1 -> "$HOME/Dropbox/Mathematics/Courses/MAT1260-Algebre-Lineaire-II-2018H"
+m1w -> "$HOME/website/maths/teaching/MAT1250-2018H"
+m7 -> "$HOME/Dropbox/Mathematics/Courses/MAT7200-Algebre-Homologique-2018H"
+m7w -> "$HOME/website/maths/teaching/MAT7200-2018H"
+m7old -> "$HOME/Dropbox/Mathematics/Courses/MAT7200-Algebre-Homologique-2013H"
 
 # configuration
 bash-conf -> "$HOME/.bash-conf"
