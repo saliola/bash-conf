@@ -1,6 +1,6 @@
 # current courses and references
 m1 -> "$HOME/Dropbox/Mathematics/Courses/MAT1260-Algebre-Lineaire-II-2018H"
-m1w -> "$HOME/website/maths/teaching/MAT1250-2018H"
+m1w -> "$HOME/website/maths/teaching/MAT1260-2018H"
 m7 -> "$HOME/Dropbox/Mathematics/Courses/MAT7200-Algebre-Homologique-2018H"
 m7w -> "$HOME/website/maths/teaching/MAT7200-2018H"
 m7old -> "$HOME/Dropbox/Mathematics/Courses/MAT7200-Algebre-Homologique-2013H"
