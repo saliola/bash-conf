@@ -45,9 +45,8 @@ reference-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
 recommendation-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
 advising -> "$HOME/Dropbox/uqam/advising"
 
-# CRM
-ec -> "$HOME/Dropbox/uqam/SemestreThematique2017/EquivariantCombinatorics"
-crm -> "$HOME/Dropbox/uqam/SemestreThematique2017/"
+# organizational
+cms -> "$HOME/Dropbox/Mathematics/Conferences/CMS-2018W"
 
 # projects
 imm -> "$HOME/Dropbox/Mathematics/articles/Immaculate"
