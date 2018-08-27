@@ -3,9 +3,8 @@ alias g='git'
 source /usr/share/bash-completion/completions/git
 complete -o default -o nospace -F _git g
 
-# alias open to gvfs-open
-#alias open=/usr/bin/xdg-open    # desktop agnostic alternative
-alias open=/usr/bin/gvfs-open    # gnome-open replacement
+# alias open to gio open
+alias open='/usr/bin/gio open'     # gnome-open replacement
 
 # shutter is the new skitch
 alias skitch=/usr/bin/shutter

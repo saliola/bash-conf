@@ -36,7 +36,7 @@ add_alias mu "mupdf" "mupdf"
 
 add_alias s "sage"
 
-add_alias o "/usr/bin/gvfs-open" "open"
+add_alias o "/usr/bin/gio open" "open"
 
 add_alias l "ls --color=auto" "ls -G"
 add_alias ls "ls --color=auto" "ls -G"
