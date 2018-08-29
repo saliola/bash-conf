@@ -2,15 +2,30 @@
 #  Confifure special keys  #
 ############################
 
-# Note: set the capslock key behaviour with use gnome-tweak-tool
+########################################
+#  reset all options back to defaults  #
+########################################
+setxkbmap -option
 
-# set left Ctrl as Compose key
+#############################
+#  Set CapsLock as Control  #
+#############################
+# Notes:
+# - use ``ctrl:swapcaps`` to swap (left) contrl with capslock
+# - another option that might be equivalent: ``caps:ctrl_modifier``
+
+setxkbmap -option ctrl:nocaps
+
+##################################
+#  Set left Ctrl as Compose key  #
+##################################
+
 setxkbmap -option compose:lctrl
 
 ###################################################
 #  Swap Alt and Command keys on the Mac Keyboard  #
 ###################################################
-#
+
 HOSTNAME=$(hostname)
 if [ $HOSTNAME = "macbookpro" ]; then
     setxkbmap -option altwin:swap_alt_win
