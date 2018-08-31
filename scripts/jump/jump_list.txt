@@ -1,9 +1,6 @@
 # current courses and references
-m1 -> "$HOME/Dropbox/Mathematics/Courses/MAT1260-Algebre-Lineaire-II-2018H"
-m1w -> "$HOME/website/maths/teaching/MAT1260-2018H"
-m7 -> "$HOME/Dropbox/Mathematics/Courses/MAT7200-Algebre-Homologique-2018H"
-m7w -> "$HOME/website/maths/teaching/MAT7200-2018H"
-m7old -> "$HOME/Dropbox/Mathematics/Courses/MAT7200-Algebre-Homologique-2013H"
+m7 -> "$HOME/Dropbox/Mathematics/Courses/MAT7441-Algorithmes-en-combinatoire-2018A"
+m7w -> "$HOME/website/maths/teaching/MAT7441-2018A"
 
 # configuration
 bash-conf -> "$HOME/.bash-conf"
@@ -24,6 +21,7 @@ downloads -> "$HOME/Downloads"
 
 # dropbox
 Dropbox -> "$HOME/Dropbox"
+cv -> "$HOME/Dropbox/Mathematics/Grants/CV"
 db -> "$HOME/Dropbox"
 dropbox -> "$HOME/Dropbox"
 ebooks -> "$HOME/Dropbox/eBooks"
@@ -39,14 +37,17 @@ talks -> "$HOME/Dropbox/Mathematics/Talks"
 website -> "$HOME/website"
 
 # uqam
-uqam -> "$HOME/Dropbox/uqam"
+advising -> "$HOME/Dropbox/uqam/advising"
+ev -> "$HOME/Dropbox/uqam/uqam-evaluation-2018"
+evaluation -> "$HOME/Dropbox/uqam/uqam-evaluation-2018"
 reports -> "$HOME/Dropbox/uqam/reports"
 reference-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
 recommendation-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
-advising -> "$HOME/Dropbox/uqam/advising"
+uqam -> "$HOME/Dropbox/uqam"
 
 # organizational
 cms -> "$HOME/Dropbox/Mathematics/Conferences/CMS-2018W"
+caac -> "$HOME/Dropbox/Mathematics/Conferences/CAAC-2019"
 
 # projects
 imm -> "$HOME/Dropbox/Mathematics/articles/Immaculate"
