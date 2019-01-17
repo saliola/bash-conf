@@ -1,6 +1,10 @@
 # current courses and references
-m7 -> "$HOME/Dropbox/Mathematics/Courses/MAT7441-Algorithmes-en-combinatoire-2018A"
-m7w -> "$HOME/website/maths/teaching/MAT7441-2018A"
+m1 -> "$HOME/Dropbox/Mathematics/Courses/MAT1260-Algebre-Lineaire-II-2019H"
+m1w -> "$HOME/website/maths/teaching/MAT1260-2019H"
+m1p -> "$HOME/Dropbox/Mathematics/Courses/MAT1260-Algebre-Lineaire-II-2018H"
+m3 -> "$HOME/Dropbox/Mathematics/Courses/MAT3505-Seminaire-de-mathematiques-2019H"
+m3w -> "$HOME/website/maths/teaching/MAT3505-2019H"
+m3p -> "$HOME/Dropbox/Mathematics/Courses/MAT3505-Seminaire-de-mathematiques-2017A"
 
 # configuration
 bash-conf -> "$HOME/.bash-conf"
