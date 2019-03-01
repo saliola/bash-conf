@@ -5,6 +5,7 @@
 
 # remove /usr/texbin from PATH
 PATH=${PATH%:\/usr\/texbin\//}
+
 # add /Library/TeX/texbin to PATH
 PATH=$PATH:/Library/TeX/texbin
 export PATH=$PATH
