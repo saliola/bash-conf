@@ -1,7 +1,5 @@
 # git alias (with tab completion)
-alias g='git'
-source /usr/share/bash-completion/completions/git
-complete -o default -o nospace -F _git g
+source $BASHCONF_DIR/scripts/git.bash
 
 # alias open to gio open
 alias open='/usr/bin/gio open'     # gnome-open replacement
