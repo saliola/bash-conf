@@ -11,9 +11,7 @@ elif [ -f /opt/bash-completion/etc/bash_completion ]; then
 fi
 
 # git alias (with tab completion)
-alias g='git'
-source $BASHCONF_DIR/scripts/git-completion.bash
-complete -o default -o nospace -F _git g
+source $BASHCONF_DIR/scripts/git.bash
 
 # MacVIM
 if [[ -e "/Applications/MacVim.app" ]]; then
