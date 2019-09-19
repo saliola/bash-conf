@@ -1,10 +1,7 @@
 # current courses and references
-m1 -> "$HOME/Dropbox/Mathematics/Courses/MAT1260-Algebre-Lineaire-II-2019H"
-m1w -> "$HOME/website/maths/teaching/MAT1260-2019H"
-m1p -> "$HOME/Dropbox/Mathematics/Courses/MAT1260-Algebre-Lineaire-II-2018H"
-m3 -> "$HOME/Dropbox/Mathematics/Courses/MAT3505-Seminaire-de-mathematiques-2019H"
-m3w -> "$HOME/website/maths/teaching/MAT3505-2019H"
-m3p -> "$HOME/Dropbox/Mathematics/Courses/MAT3505-Seminaire-de-mathematiques-2017A"
+m2 -> "$HOME/Dropbox/Mathematics/Courses/MAT2250-Theorie-des-groupes-2019A"
+m2w -> "$HOME/saliola.github.io/maths/teaching/MAT2250-2019A"
+m2p -> "$HOME/Dropbox/Mathematics/Courses/MAT2250-Theorie-des-groupes-2014A"
 
 # configuration
 bash-conf -> "$HOME/.bash-conf"
@@ -56,6 +53,7 @@ caac -> "$HOME/Dropbox/Mathematics/Conferences/CAAC-2019"
 # projects
 imm -> "$HOME/Dropbox/Mathematics/articles/Immaculate"
 lrb -> "$HOME/Dropbox/Mathematics/articles/lrbs"
-pleth -> "$HOME/Dropbox/Mathematics/projects/plethysm"
+pleth -> "$HOME/Dropbox/Mathematics/projects/crystal_pleth"
+crystal_pleth -> "$HOME/Dropbox/Mathematics/projects/crystal_pleth"
 qmn -> "$HOME/Dropbox/Mathematics/articles/quantum-mn-rule"
 r2r -> "$HOME/Dropbox/Mathematics/projects/random-to-random"
