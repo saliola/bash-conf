@@ -127,7 +127,7 @@ _j()
     pre=${COMP_WORDS[COMP_CWORD-1]}
 
     if [ $COMP_CWORD -eq 1 ]; then
-        BOOKMARKS=$(cat $(j jumplist) | sed 's/ ->.*$//')
+        BOOKMARKS=$(grep -E '^[[:alnum:]]' $(j jumplist) | sed 's/ ->.*$//')
         COMPREPLY=( $(compgen -W "$BOOKMARKS" -- $cur) )
     elif [ $COMP_CWORD -eq 2 ]; then
         BOOKMARK=$(grep -e "^$pre ->" $(j jumplist))
