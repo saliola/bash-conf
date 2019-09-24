@@ -45,6 +45,7 @@ reports -> "$HOME/Dropbox/uqam/reports"
 reference-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
 recommendation-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
 uqam -> "$HOME/Dropbox/uqam"
+direction -> "$HOME/Dropbox/uqam/Direction1ercycle"
 
 # organizational
 cms -> "$HOME/Dropbox/Mathematics/Conferences/CMS-2018W"
