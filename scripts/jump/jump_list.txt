@@ -22,7 +22,7 @@ downloads -> "$HOME/Downloads"
 
 # dropbox
 Dropbox -> "$HOME/Dropbox"
-cv -> "$HOME/Dropbox/Mathematics/Grants/CV"
+cv -> "$HOME/Dropbox/Mathematics/Applications/cv.git"
 db -> "$HOME/Dropbox"
 dropbox -> "$HOME/Dropbox"
 ebooks -> "$HOME/Dropbox/eBooks"
