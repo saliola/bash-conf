@@ -20,5 +20,6 @@ if [[ -e "/Applications/MacVim.app" ]]; then
     alias vi=$VIMAPP
 fi
 
-# SKIM
+# aliases to open apps from the command line
 alias skim="open -a /Applications/Skim.app"
+alias xournalpp="open -a /Applications/Xournal++.app"
