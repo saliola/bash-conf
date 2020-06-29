@@ -40,9 +40,9 @@ add_alias o "/usr/bin/gio open" "open"
 
 add_alias l "ls --color=auto" "ls -G"
 add_alias ls "ls --color=auto" "ls -G"
-add_alias la "ls --color=auto -a" "ls -G a"
+add_alias la "ls --color=auto -a" "ls -G -a"
 add_alias ll "ls --color=auto -lsh" "ls -G -lsh"
-add_alias lrt "ls --color=auto -lrt" "ls -G -lrt"
+add_alias lrt "ls --color=auto -lrth" "ls -G -lrth"
 
 # set the TERM in tmux so that tmux plays nicely with vim colorscheme
 # https://github.com/krisleech/vimfiles/wiki/Fix-solarized-theme-in-tmux
