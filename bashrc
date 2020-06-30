@@ -44,10 +44,14 @@ source $BASHCONF_DIR/scripts/sage-viewer-dir.bash
 
 # source platform dependant configs
 UNAME=$(uname)
-if [[ $UNAME == 'Linux' ]]; then
-    source $BASHCONF_DIR/bashrc-linux
-elif [[ $UNAME == 'Darwin' ]]; then
+if [[ $UNAME == 'Darwin' ]]; then
     source $BASHCONF_DIR/bashrc-macosx
+elif [[ $UNAME == 'Linux' ]]; then
+    if [[ $(hostname -s) == beluga* ]]; then
+        source $BASHCONF_DIR/bashrc-beluga
+    else
+        source $BASHCONF_DIR/bashrc-linux
+    fi
 fi
 
 #############
