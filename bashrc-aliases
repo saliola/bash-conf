@@ -42,7 +42,7 @@ add_alias l "ls --color=auto" "ls -G"
 add_alias ls "ls --color=auto" "ls -G"
 add_alias la "ls --color=auto -a" "ls -G -a"
 add_alias ll "ls --color=auto -lsh" "ls -G -lh"
-add_alias lv "ls --color=auto -v" "ls -G | sort -V"
+add_alias lv "ls --color=auto -v" 'lsort(){ ls -G "$@" | sort -V ;  unset -f lsort; }; lsort'
 add_alias lrt "ls --color=auto -lrth" "ls -G -lrth"
 
 # set the TERM in tmux so that tmux plays nicely with vim colorscheme
