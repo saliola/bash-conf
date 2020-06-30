@@ -19,7 +19,7 @@ BASHCONF_DIR=$HOME/.bash-conf
 #######################################
 
 ## Add my bin directory to the PATH
-export PATH=~/Applications/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/bin
+export PATH=~/Applications/bin:$PATH
 
 ###########################################
 #  Load platform specific configurations  #
