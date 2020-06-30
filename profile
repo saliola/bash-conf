@@ -27,8 +27,14 @@ export PATH=~/Applications/bin:$PATH
 
 # source platform dependant configs
 UNAME=$(uname)
-if [[ $UNAME == 'Linux' ]]; then
-    source $BASHCONF_DIR/profile-linux
-elif [[ $UNAME == 'Darwin' ]]; then
+if [[ $UNAME == 'Darwin' ]]; then
     source $BASHCONF_DIR/profile-macosx
+elif [[ $UNAME == 'Linux' ]]; then
+    if [[ $(hostname -s) == beluga* ]]; then
+        source $BASHCONF_DIR/profile-beluga
+    else
+        source $BASHCONF_DIR/profile-linux
+    fi
 fi
+
+
