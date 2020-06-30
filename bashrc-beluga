@@ -1,0 +1,2 @@
+# git alias (with tab completion)
+source $BASHCONF_DIR/scripts/git.bash

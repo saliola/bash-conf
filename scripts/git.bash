@@ -10,10 +10,14 @@ alias g='_my_git_cmd'
 
 # source platform dependant configs
 UNAME=$(uname)
-if [[ $UNAME == 'Linux' ]]; then
-    source /usr/share/bash-completion/completions/git
-elif [[ $UNAME == 'Darwin' ]]; then
+if [[ $UNAME == 'Darwin' ]]; then
     source $BASHCONF_DIR/scripts/git-completion.bash
+elif [[ $UNAME == 'Linux' ]]; then
+    if [[ $(hostname -s) == beluga* ]]; then
+        source /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/etc/bash_completion.d/git-completion.bash
+    else
+        source /usr/share/bash-completion/completions/git
+    fi;
 fi
 
 complete -o default -o nospace -F _git g
