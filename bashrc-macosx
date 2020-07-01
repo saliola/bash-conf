@@ -13,11 +13,15 @@ fi
 # git alias (with tab completion)
 source $BASHCONF_DIR/scripts/git.bash
 
-# MacVIM
+# VIM: alias vi to macvim if available or
+# alias vi to `vi -X` so that it does not launch the X server
 if [[ -e "/Applications/MacVim.app" ]]; then
     VIMAPP="/Applications/MacVim.app/Contents/MacOS/Vim"
     alias vim=$VIMAPP
     alias vi=$VIMAPP
+elif [[ -f "/usr/local/bin/vim" ]]; then
+    alias vim="/usr/local/bin/vim -X"
+    alias vi="/usr/local/bin/vi -X"
 fi
 
 # aliases to open apps from the command line
