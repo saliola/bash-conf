@@ -27,3 +27,21 @@ fi
 # aliases to open apps from the command line
 alias skim="open -a /Applications/Skim.app"
 alias xournalpp="open -a /Applications/Xournal++.app"
+
+############
+#  prompt  #
+############
+
+HOSTNAME=$(hostname -s)
+if [[ $HOSTNAME == *Mac-Pro ]]; then
+PROMPT_COMMAND='DIR=`pwd|sed -e "s!$HOME!~!"`; if [ ${#DIR} -gt 58 ]; then CurDir=${DIR:0:12}...${DIR:${#DIR}-43}; else CurDir=$DIR; fi'
+export PS1="
+\[\033[32m\]«\D{%Y-%m-%d}|\[\033[32m\]\t|\[\033[32m\]\${CurDir}»
+\[\033[46m\]\033[30m\]\h\[\033[00m\]: "
+fi;
+if [[ $HOSTNAME == *MacBook-Pro ]]; then
+PROMPT_COMMAND='DIR=`pwd|sed -e "s!$HOME!~!"`; if [ ${#DIR} -gt 58 ]; then CurDir=${DIR:0:12}...${DIR:${#DIR}-43}; else CurDir=$DIR; fi'
+export PS1="
+\[\033[32m\]«\D{%Y-%m-%d}|\[\033[32m\]\t|\[\033[32m\]\${CurDir}»
+\[\033[100m\]\033[97m\]\h\[\033[00m\]: "
+fi;
