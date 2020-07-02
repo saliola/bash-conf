@@ -47,7 +47,8 @@ UNAME=$(uname)
 if [[ $UNAME == 'Darwin' ]]; then
     source $BASHCONF_DIR/bashrc-macosx
 elif [[ $UNAME == 'Linux' ]]; then
-    if [[ $(hostname -s) == beluga* ]]; then
+    HOSTNAME=$(hostname -s)
+    if [[ $HOSTNAME == beluga* || $HOSTNAME == blg* ]]; then
         source $BASHCONF_DIR/bashrc-beluga
     else
         source $BASHCONF_DIR/bashrc-linux
