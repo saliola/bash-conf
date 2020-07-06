@@ -18,5 +18,5 @@ unset GNOME_KEYRING_CONTROL
 
 PROMPT_COMMAND='DIR=`pwd|sed -e "s!$HOME!~!"`; if [ ${#DIR} -gt 58 ]; then CurDir=${DIR:0:12}...${DIR:${#DIR}-43}; else CurDir=$DIR; fi'
 export PS1="
-\[\033[32m\]«\D{%Y-%m-%d}|\[\033[32m\]\t|\[\033[32m\]\${CurDir}»
-\[\033[34m\]\h:\[\033[00m\] "
+\001\033[32m\002«\D{%Y-%m-%d}|\001\033[32m\002\t|\001\033[32m\002\${CurDir}»
+\001\033[34m\002\h:\001\033[00m\002 "
