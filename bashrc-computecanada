@@ -1,0 +1,8 @@
+# git alias (with tab completion)
+source $BASHCONF_DIR/scripts/git.bash
+
+############
+#  prompt  #
+############
+
+PS1_HOSTNAME="\001\033[47m\002\001\033[30m\002\h"

@@ -31,11 +31,10 @@ if [[ $UNAME == 'Darwin' ]]; then
     source $BASHCONF_DIR/profile-macosx
 elif [[ $UNAME == 'Linux' ]]; then
     HOSTNAME=$(hostname -s)
-    if [[ $HOSTNAME == beluga* || $HOSTNAME == blg* ]]; then
-        source $BASHCONF_DIR/profile-beluga
+    if [[ $HOSTNAME == *computecanada.ca || $HOSTNAME == *calculquebec.ca ]]; then
+        source $BASHCONF_DIR/profile-computecanada
     else
         source $BASHCONF_DIR/profile-linux
     fi
 fi
-
 

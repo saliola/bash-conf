@@ -34,14 +34,8 @@ alias xournalpp="open -a /Applications/Xournal++.app"
 
 HOSTNAME=$(hostname -s)
 if [[ $HOSTNAME == *Mac-Pro ]]; then
-PROMPT_COMMAND='DIR=`pwd|sed -e "s!$HOME!~!"`; if [ ${#DIR} -gt 58 ]; then CurDir=${DIR:0:12}...${DIR:${#DIR}-43}; else CurDir=$DIR; fi'
-export PS1="
-\001\033[32m\002«\D{%Y-%m-%d}|\001\033[32m\002\t|\001\033[32m\002\${CurDir}»
-\001\033[46m\002\033[30m\002\h\001\033[00m\002: "
+    PS1_HOSTNAME="\001\033[46m\002\001\033[30m\002\h"
+elif [[ $HOSTNAME == *MacBook-Pro ]]; then
+    PS1_HOSTNAME="\001\033[100m\002\001\033[97m\002\h"
 fi;
-if [[ $HOSTNAME == *MacBook-Pro ]]; then
-PROMPT_COMMAND='DIR=`pwd|sed -e "s!$HOME!~!"`; if [ ${#DIR} -gt 58 ]; then CurDir=${DIR:0:12}...${DIR:${#DIR}-43}; else CurDir=$DIR; fi'
-export PS1="
-\001\033[32m\002«\D{%Y-%m-%d}|\001\033[32m\002\t|\001\033[32m\002\${CurDir}»
-\001\033[100m\002\033[97m\002\h\001\033[00m\002: "
-fi;
+

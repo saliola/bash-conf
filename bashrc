@@ -30,7 +30,7 @@ source $BASHCONF_DIR/scripts/jump/jump.sh
 source $BASHCONF_DIR/scripts/sage-viewer-dir.bash
 
 ######################################
-#  platform specific configurations  #
+#  platform-specific configurations  #
 ######################################
 
 # source platform dependant configs
@@ -39,12 +39,25 @@ if [[ $UNAME == 'Darwin' ]]; then
     source $BASHCONF_DIR/bashrc-macosx
 elif [[ $UNAME == 'Linux' ]]; then
     HOSTNAME=$(hostname -s)
-    if [[ $HOSTNAME == beluga* || $HOSTNAME == blg* ]]; then
-        source $BASHCONF_DIR/bashrc-beluga
+    if [[ $HOSTNAME == *computecanada.ca || $HOSTNAME == *calculquebec.ca ]]; then
+        source $BASHCONF_DIR/bashrc-computecanada
     else
         source $BASHCONF_DIR/bashrc-linux
     fi
 fi
+
+############
+#  prompt  #
+############
+# should follow platform-specfic configurations since that sets $PS1_HOSTNAME
+
+if [[ -z "${PS1_HOSTNAME}" ]]; then
+    PS1_HOSTNAME=$(hostname -s);
+fi;
+PROMPT_COMMAND='DIR=`pwd|sed -e "s!$HOME!~!"`; if [ ${#DIR} -gt 58 ]; then CurDir=${DIR:0:12}...${DIR:${#DIR}-43}; else CurDir=$DIR; fi'
+export PS1="
+$PS1_HOSTNAME\001\033[00m\002\001\033[32m\002:\${CurDir}||\D{%Y-%m-%d}||\t\001\033[00m\002
+》"
 
 #############
 #  aliases  #
