@@ -30,7 +30,7 @@ UNAME=$(uname)
 if [[ $UNAME == 'Darwin' ]]; then
     source $BASHCONF_DIR/profile-macosx
 elif [[ $UNAME == 'Linux' ]]; then
-    HOSTNAME=$(hostname -s)
+    HOSTNAME=$(hostname)
     if [[ $HOSTNAME == *computecanada.ca || $HOSTNAME == *calculquebec.ca ]]; then
         source $BASHCONF_DIR/profile-computecanada
     else
