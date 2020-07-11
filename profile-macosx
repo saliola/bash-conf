@@ -10,10 +10,10 @@ PATH=${PATH%:\/usr\/texbin\//}
 PATH=$PATH:/Library/TeX/texbin
 export PATH=$PATH
 
-#############################
-#  Set PATH for Python 3.7  #
-#############################
+###########################
+#  Set PATH for Python 3  #
+###########################
 
-py3ver=$(ls /Library/Frameworks/Python.framework/Versions/3* | sort -V | tail -1)
+py3ver=$(basename $(ls -d /Library/Frameworks/Python.framework/Versions/3* | sort -V | tail -1))
 PATH="/Library/Frameworks/Python.framework/Versions/$py3ver/bin:${PATH}"
 export PATH
