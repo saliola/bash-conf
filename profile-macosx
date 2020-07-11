@@ -14,5 +14,6 @@ export PATH=$PATH
 #  Set PATH for Python 3.7  #
 #############################
 
-PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+py3ver=$(ls /Library/Frameworks/Python.framework/Versions/3* | sort -V | tail -1)
+PATH="/Library/Frameworks/Python.framework/Versions/$py3ver/bin:${PATH}"
 export PATH
