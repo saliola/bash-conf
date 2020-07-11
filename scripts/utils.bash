@@ -26,3 +26,6 @@ function sage-viewer-dir() {
     echo "most recently used sage_viewer director: $sage_viewer_dir"
     cd $sage_viewer_dir
 }
+
+# create a timestamped copy of a file
+alias timestamp=$BASHCONF_DIR/scripts/timestamp.sh
