@@ -24,10 +24,10 @@ BASHCONF_DIR=$HOME/.bash-conf
 source $BASHCONF_DIR/scripts/jump/jump.sh
 
 ##################
-#  sage scripts  #
+#  bash scripts  #
 ##################
 
-source $BASHCONF_DIR/scripts/sage-viewer-dir.bash
+source $BASHCONF_DIR/scripts/utils.bash
 
 ######################################
 #  platform-specific configurations  #
