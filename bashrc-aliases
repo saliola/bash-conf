@@ -38,6 +38,9 @@ add_alias s "sage"
 
 add_alias o "/usr/bin/gio open" "open"
 
+add_alias icp "cp -i"
+add_alias imv "mv -i"
+
 add_alias l "ls --color=auto" "ls -G"
 add_alias ls "ls --color=auto" "ls -G"
 add_alias la "ls --color=auto -a" "ls -G -a"
