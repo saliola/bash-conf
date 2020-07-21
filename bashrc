@@ -49,15 +49,33 @@ fi
 ############
 #  prompt  #
 ############
-# should follow platform-specfic configurations since that sets $PS1_HOSTNAME
+# this should come after platform-specfic configurations since that sets $PS1_HOSTNAME
+# Reference: https://superuser.com/a/517110
 
 if [[ -z "${PS1_HOSTNAME}" ]]; then
     PS1_HOSTNAME=$(hostname -s);
 fi;
-PROMPT_COMMAND='DIR=`pwd|sed -e "s!$HOME!~!"`; if [ ${#DIR} -gt 58 ]; then CurDir=${DIR:0:12}...${DIR:${#DIR}-43}; else CurDir=$DIR; fi'
-export PS1="
-$PS1_HOSTNAME\001\033[00m\002\001\033[32m\002:\${CurDir}||\D{%Y-%m-%d}||\t\001\033[00m\002
-》"
+
+function prompt_left() {
+    DIR=$(pwd|sed -e "s!$HOME!~!")
+    if [ ${#DIR} -gt 58 ];
+    then
+        CurDir=${DIR:0:12}...${DIR:${#DIR}-43};
+    else
+        CurDir=$DIR;
+    fi;
+    echo -e "${PS1_HOSTNAME}\001\033[00m\002\001\033[32m\002:${CurDir}\001\033[00m\002"
+}
+
+function prompt_right() {
+    echo -e "[\001\033[35m\002\D{%Y-%m-%d}\001\033[00m\002||\001\033[35m\002\T\001\033[00m\002]"
+}
+
+function prompt() {
+    compensate=24
+    PS1=$(printf "\n%*s\r%s\n》" "$(($(tput cols)+${compensate}))" "$(prompt_right)" "$(prompt_left)")
+}
+PROMPT_COMMAND=prompt
 
 #############
 #  aliases  #
