@@ -64,15 +64,15 @@ function prompt_left() {
     else
         CurDir=$DIR;
     fi;
-    echo -e "${PS1_HOSTNAME}\001\033[00m\002\001\033[32m\002:${CurDir}\001\033[00m\002"
+    echo -e "${PS1_HOSTNAME}\001\033[00m\002\001\033[33m\002:${CurDir}\001\033[00m\002"
 }
 
 function prompt_right() {
-    echo -e "[\001\033[35m\002\D{%Y-%m-%d}\001\033[00m\002||\001\033[35m\002\T\001\033[00m\002]"
+    echo -e "\001\033[33m\002[\D{%Y-%m-%d}][\A]\001\033[00m\002"
 }
 
 function prompt() {
-    compensate=24
+    compensate=13
     PS1=$(printf "\n%*s\r%s\n》" "$(($(tput cols)+${compensate}))" "$(prompt_right)" "$(prompt_left)")
 }
 PROMPT_COMMAND=prompt
