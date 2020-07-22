@@ -58,9 +58,9 @@ fi;
 
 function prompt_left() {
     DIR=$(pwd|sed -e "s!$HOME!~!")
-    if [ ${#DIR} -gt 58 ];
+    if [ ${#DIR} -gt $(($(tput cols)-40)) ];
     then
-        CurDir=${DIR:0:12}...${DIR:${#DIR}-43};
+        CurDir=${DIR:0:15}...${DIR:${#DIR}-32};
     else
         CurDir=$DIR;
     fi;
@@ -68,7 +68,7 @@ function prompt_left() {
 }
 
 function prompt_right() {
-    echo -e "\001\033[33m\002[\D{%Y-%m-%d}][\A]\001\033[00m\002"
+    echo -e "\001\033[30m\002[\D{%Y-%m-%d}][\A]\001\033[00m\002"
 }
 
 function prompt() {
