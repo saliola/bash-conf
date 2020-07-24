@@ -68,7 +68,7 @@ function prompt_left() {
 }
 
 function prompt_right() {
-    echo -e "\001\033[30m\002[\D{%Y-%m-%d}][\A]\001\033[00m\002"
+    echo -e "\001\033[90m\002[\D{%Y-%m-%d}][\A]\001\033[00m\002"
 }
 
 function prompt() {
