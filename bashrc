@@ -72,7 +72,7 @@ function prompt_right() {
 }
 
 function prompt() {
-    compensate=13
+    compensate=12
     PS1=$(printf "\n%*s\r%s\n》" "$(($(tput cols)+${compensate}))" "$(prompt_right)" "$(prompt_left)")
 }
 PROMPT_COMMAND=prompt
