@@ -38,8 +38,8 @@ UNAME=$(uname)
 if [[ $UNAME == 'Darwin' ]]; then
     source $BASHCONF_DIR/bashrc-macosx
 elif [[ $UNAME == 'Linux' ]]; then
-    HOSTNAME=$(hostname)
-    if [[ $HOSTNAME == *computecanada.ca || $HOSTNAME == *calculquebec.ca ]]; then
+    HOSTNAME=$(hostname -d)
+    if [[ $HOSTNAME == *computecanada.ca || $HOSTNAME == *calculquebec.ca || $HOSTNAME == *sharcnet ]]; then
         source $BASHCONF_DIR/bashrc-computecanada
     else
         source $BASHCONF_DIR/bashrc-linux
