@@ -13,8 +13,8 @@ UNAME=$(uname)
 if [[ $UNAME == 'Darwin' ]]; then
     source $BASHCONF_DIR/scripts/git-completion.bash
 elif [[ $UNAME == 'Linux' ]]; then
-    HOSTNAME=$(hostname)
-    if [[ $HOSTNAME == *computecanada.ca || $HOSTNAME == *calculquebec.ca ]]; then
+    HOSTNAME=$(hostname -d)
+    if [[ $HOSTNAME == *computecanada.ca || $HOSTNAME == *calculquebec.ca || $HOSTNAME == *sharcnet ]]; then
         source /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/etc/bash_completion.d/git-completion.bash
     else
         source /usr/share/bash-completion/completions/git
