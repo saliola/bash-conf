@@ -1,7 +1,7 @@
 # current courses and references
-m2 -> "$HOME/Dropbox/Mathematics/Courses/MAT2250-Theorie-des-groupes-2019A"
-m2w -> "$HOME/saliola.github.io/maths/teaching/MAT2250-2019A"
-m2p -> "$HOME/Dropbox/Mathematics/Courses/MAT2250-Theorie-des-groupes-2014A"
+m7 -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2020A"
+m7w -> "$HOME/saliola.github.io/maths/teaching/MAT7600-2020A"
+m7p -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A"
 
 # configuration
 bash-conf -> "$HOME/.bash-conf"
