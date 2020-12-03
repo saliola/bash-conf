@@ -1,60 +1,54 @@
 # current courses and references
-m7 -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2020A"
+m7 -> "$HOME/ownCloud/Mathematics/Courses/MAT7600-Algebre-2020A"
 m7w -> "$HOME/saliola.github.io/maths/teaching/MAT7600-2020A"
-m7p -> "$HOME/Dropbox/Mathematics/Courses/MAT7600-Algebre-2015A"
+m7p -> "$HOME/ownCloud/Mathematics/Courses/MAT7600-Algebre-2015A"
 
 # configuration
 bash-conf -> "$HOME/.bash-conf"
 tmux-conf -> "$HOME/.tmux-conf"
 vim-conf -> "$HOME/.vim"
-xmonad -> "$HOME/.xmonad"
 jump -> "$HOME/.bash-conf/scripts/jump"
 j -> "$HOME/.bash-conf/scripts/jump"
 
 # application directories
 apps -> "$HOME/Applications"
 sage -> "$HOME/Applications/sage"
-itunes-music -> "$HOME/Music/iTunes/iTunes Media/Music"
 
-# download directory
+# various directories
 dl -> "$HOME/Downloads"
 downloads -> "$HOME/Downloads"
+docs -> "$HOME/Documents"
+website -> "$HOME/website"
 
 # dropbox
 Dropbox -> "$HOME/Dropbox"
-cv -> "$HOME/Dropbox/Mathematics/Applications/cv.git"
-db -> "$HOME/Dropbox"
 dropbox -> "$HOME/Dropbox"
-ebooks -> "$HOME/Dropbox/eBooks"
-notes -> "$HOME/Dropbox/notes"
-math -> "$HOME/Dropbox/Mathematics"
-articles -> "$HOME/Dropbox/Mathematics/articles"
-courses -> "$HOME/Dropbox/Mathematics/Courses"
-grants -> "$HOME/Dropbox/Mathematics/Grants"
-projects -> "$HOME/Dropbox/Mathematics/projects"
-reviews -> "$HOME/Dropbox/Mathematics/reviews"
-talks -> "$HOME/Dropbox/Mathematics/Talks"
+db -> "$HOME/Dropbox"
 
-website -> "$HOME/website"
+# ownCloud (UQAM)
+ebooks -> "$HOME/ownCloud/eBooks"
+cv -> "$HOME/ownCloud/Mathematics/Applications/cv.git"
+notes -> "$HOME/ownCloud/notes"
+math -> "$HOME/ownCloud/Mathematics"
+articles -> "$HOME/ownCloud/Mathematics/articles"
+courses -> "$HOME/ownCloud/Mathematics/Courses"
+grants -> "$HOME/ownCloud/Mathematics/Grants"
+projects -> "$HOME/ownCloud/Mathematics/projects"
+reviews -> "$HOME/ownCloud/Mathematics/reviews"
+talks -> "$HOME/ownCloud/Mathematics/Talks"
 
 # uqam
-advising -> "$HOME/Dropbox/uqam/advising"
-ev -> "$HOME/Dropbox/uqam/uqam-evaluation-2018"
-evaluation -> "$HOME/Dropbox/uqam/uqam-evaluation-2018"
-reports -> "$HOME/Dropbox/uqam/reports"
-reference-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
-recommendation-letters -> "$HOME/Dropbox/uqam/recommendation-letters"
-uqam -> "$HOME/Dropbox/uqam"
-direction -> "$HOME/Dropbox/uqam/Direction1ercycle"
-
-# organizational
-cms -> "$HOME/Dropbox/Mathematics/Conferences/CMS-2018W"
-caac -> "$HOME/Dropbox/Mathematics/Conferences/CAAC-2019"
+advising -> "$HOME/ownCloud/uqam/advising"
+reports -> "$HOME/ownCloud/uqam/reports"
+reference-letters -> "$HOME/ownCloud/uqam/recommendation-letters"
+recommendation-letters -> "$HOME/ownCloud/uqam/recommendation-letters"
+uqam -> "$HOME/ownCloud/uqam"
+direction -> "$HOME/Dropbox/SharedFolders/Direction1ercycle"
 
 # projects
-imm -> "$HOME/Dropbox/Mathematics/articles/Immaculate"
-lrb -> "$HOME/Dropbox/Mathematics/articles/lrbs"
-pleth -> "$HOME/Dropbox/Mathematics/projects/crystal_pleth"
-crystal_pleth -> "$HOME/Dropbox/Mathematics/projects/crystal_pleth"
-qmn -> "$HOME/Dropbox/Mathematics/articles/quantum-mn-rule"
-r2r -> "$HOME/Dropbox/Mathematics/projects/random-to-random"
+imm -> "$HOME/ownCloud/Mathematics/articles/Immaculate"
+lrb -> "$HOME/ownCloud/Mathematics/articles/lrbs"
+pleth -> "$HOME/ownCloud/Mathematics/projects/crystal_pleth"
+crystal_pleth -> "$HOME/ownCloud/Mathematics/projects/crystal_pleth"
+qmn -> "$HOME/ownCloud/Mathematics/articles/quantum-mn-rule"
+r2r -> "$HOME/ownCloud/Mathematics/projects/random-to-random"
