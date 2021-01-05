@@ -18,7 +18,7 @@ sage -> "$HOME/Applications/sage"
 dl -> "$HOME/Downloads"
 downloads -> "$HOME/Downloads"
 docs -> "$HOME/Documents"
-website -> "$HOME/website"
+website -> "$HOME/saliola.github.io"
 
 # dropbox
 Dropbox -> "$HOME/Dropbox"
