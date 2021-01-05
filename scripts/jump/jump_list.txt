@@ -1,7 +1,7 @@
 # current courses and references
-m7 -> "$HOME/ownCloud/Mathematics/Courses/MAT7600-Algebre-2020A"
-m7w -> "$HOME/saliola.github.io/maths/teaching/MAT7600-2020A"
-m7p -> "$HOME/ownCloud/Mathematics/Courses/MAT7600-Algebre-2015A"
+m7 -> "$HOME/ownCloud/Mathematics/Courses/MAT7400-Representation-des-groupes"
+m7w -> "$HOME/saliola.github.io/maths/teaching/MAT7400-2021H"
+m3 -> "$HOME/ownCloud/Mathematics/Courses/MAT3505-Seminaire-de-mathematiques-2019H"
 
 # configuration
 bash-conf -> "$HOME/.bash-conf"
