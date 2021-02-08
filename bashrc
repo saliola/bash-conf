@@ -77,6 +77,13 @@ function prompt() {
 }
 PROMPT_COMMAND=prompt
 
+#########################
+#  bash configurations  #
+#########################
+
+# disable software flow control (ctrl-S/ctrl-Q)
+stty -ixon
+
 #############
 #  aliases  #
 #############
