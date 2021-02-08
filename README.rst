@@ -3,7 +3,7 @@ bash-conf
 
 Installation::
 
-    git clone https://github.com/saliola/bash-conf.git ~/.bash-conf
+    git clone git@github.com:saliola/bash-conf.git ~/.bash-conf
     cd ~/.bash-conf
     sh install.sh
 
