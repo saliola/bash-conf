@@ -48,10 +48,7 @@ add_alias ll "ls --color=auto -lsh" "ls -G -lh"
 add_alias lv "ls --color=auto -v" 'lsort(){ ls -G "$@" | sort -V ;  unset -f lsort; }; lsort'
 add_alias lrt "ls --color=auto -lrth" "ls -G -lrth"
 
-# set the TERM in tmux so that tmux plays nicely with vim colorscheme
-# https://github.com/krisleech/vimfiles/wiki/Fix-solarized-theme-in-tmux
-add_alias tmux "TERM=screen-256color-bce tmux"
-add_alias t "TERM=screen-256color-bce tmux"
+add_alias t "tmux"
 
 # combine cd and ls into one command;
 # NOTE: use `builtin cd` to access the builtin command
