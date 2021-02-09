@@ -26,6 +26,7 @@ dropbox -> "$HOME/Dropbox"
 db -> "$HOME/Dropbox"
 
 # ownCloud (UQAM)
+oc -> "$HOME/ownCloud"
 ebooks -> "$HOME/ownCloud/eBooks"
 cv -> "$HOME/ownCloud/Mathematics/Applications/cv.git"
 notes -> "$HOME/ownCloud/notes"
