@@ -1,7 +1,7 @@
 # current courses and references
-m7 -> "$HOME/ownCloud/Mathematics/Courses/MAT7400-Representation-des-groupes"
-m7w -> "$HOME/saliola.github.io/maths/teaching/MAT7400-2021H"
-m3 -> "$HOME/ownCloud/Mathematics/Courses/MAT3505-Seminaire-de-mathematiques-2019H"
+m7 -> "$HOME/saliola/ownCloud/Mathematics/Courses/MAT7600-Algebre-2021A"
+m7w -> "$HOME/saliola.github.io/maths/teaching/MAT7600-2021A"
+m7o -> "$HOME/saliola/ownCloud/Mathematics/Courses/MAT7600-Algebre-2020A"
 
 # configuration
 bash-conf -> "$HOME/.bash-conf"
@@ -40,6 +40,7 @@ talks -> "$HOME/ownCloud/Mathematics/Talks"
 
 # uqam
 advising -> "$HOME/ownCloud/uqam/advising"
+stages -> "$HOME/ownCloud/uqam/advising/stages-2021"
 reports -> "$HOME/ownCloud/uqam/reports"
 reference-letters -> "$HOME/ownCloud/uqam/recommendation-letters"
 recommendation-letters -> "$HOME/ownCloud/uqam/recommendation-letters"
@@ -53,3 +54,4 @@ pleth -> "$HOME/ownCloud/Mathematics/projects/crystal_pleth"
 crystal_pleth -> "$HOME/ownCloud/Mathematics/projects/crystal_pleth"
 qmn -> "$HOME/ownCloud/Mathematics/articles/quantum-mn-rule"
 r2r -> "$HOME/ownCloud/Mathematics/projects/random-to-random"
+sty -> "$HOME/ownCloud/Mathematics/projects/monoide-stylique"
