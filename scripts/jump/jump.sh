@@ -22,6 +22,14 @@ function jj() {
     builtin cd $HOME
 }
 
+function LS() {
+    if [ -x "$(command -v exa)" ]; then
+        command exa
+    else
+        command ls
+    fi;
+}
+
 function j() {
     USAGE="Usage: $FUNCNAME [add|cd|delete|del|edit|help|list|ls] [bookmark]" ;
 
@@ -39,7 +47,7 @@ function j() {
             else
                 BOOKMARK="$1"
             fi
-            TEST_BOOKMARK=$(grep -e "^$BOOKMARK ->" $JUMP_LIST)
+            TEST_BOOKMARK=$(grep -e "^$BOOKMARK[[:space:]]*->" $JUMP_LIST)
             if [ -z "$TEST_BOOKMARK" ] ; then
                 TARGET=${PWD/$HOME/\$HOME}
                 cecho "$FUNCNAME: add bookmark: $BOOKMARK -> $TARGET"
@@ -50,7 +58,7 @@ function j() {
             ;;
 
         cd) shift
-            BOOKMARK=$(grep -e "^$1 ->" $JUMP_LIST)
+            BOOKMARK=$(grep -e "^$1[[:space:]]*->" $JUMP_LIST)
             if [ -z "$BOOKMARK" ] ; then
                 cecho "$FUNCNAME: Bookmark does not exist: $1" ;
             else
@@ -66,7 +74,7 @@ function j() {
             ;;
 
         delete) shift
-            BOOKMARK=$(grep -e "^$1 ->" $JUMP_LIST)
+            BOOKMARK=$(grep -e "^$1[[:space:]*->" $JUMP_LIST)
             if [ -z "$BOOKMARK" ] ; then
                 cecho "$FUNCNAME: No such bookmark: $1" ;
             else
@@ -107,12 +115,12 @@ function j() {
                 $FUNCNAME list ;
             elif [ -z "$2" ] ; then
                 $FUNCNAME cd $1 ;
-                ls ;
+                LS ;
             else
                 j cd $1
                 shift
                 $FUNCNAME cd_subdir "$@" ;
-                ls ;
+                LS ;
             fi;
 
     esac
