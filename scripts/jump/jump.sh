@@ -47,7 +47,7 @@ function j() {
             else
                 BOOKMARK="$1"
             fi
-            TEST_BOOKMARK=$(grep -e "^$BOOKMARK[[:space:]]*->" $JUMP_LIST)
+            TEST_BOOKMARK=$(grep -e "^$BOOKMARK[[:space:]]->" $JUMP_LIST)
             if [ -z "$TEST_BOOKMARK" ] ; then
                 TARGET=${PWD/$HOME/\$HOME}
                 cecho "$FUNCNAME: add bookmark: $BOOKMARK -> $TARGET"
@@ -58,7 +58,7 @@ function j() {
             ;;
 
         cd) shift
-            BOOKMARK=$(grep -e "^$1[[:space:]]*->" $JUMP_LIST)
+            BOOKMARK=$(grep -e "^$1[[:space:]]->" $JUMP_LIST)
             if [ -z "$BOOKMARK" ] ; then
                 cecho "$FUNCNAME: Bookmark does not exist: $1" ;
                 return 1 ;
@@ -69,12 +69,11 @@ function j() {
             ;;
 
         cd_subdir) shift
-            # cecho "$FUNCNAME: cd \"$@\""
             eval "builtin cd \"$@\""
             ;;
 
         delete) shift
-            BOOKMARK=$(grep -e "^$1[[:space:]*->" $JUMP_LIST)
+            BOOKMARK=$(grep -e "^$1[[:space:]->" $JUMP_LIST)
             if [ -z "$BOOKMARK" ] ; then
                 cecho "$FUNCNAME: No such bookmark: $1" ;
             else

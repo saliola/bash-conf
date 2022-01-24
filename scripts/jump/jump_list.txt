@@ -1,7 +1,7 @@
 # current courses and references
-m9  -> "$HOME/ownCloud/Mathematics/Courses/MAT995G-Seminaire-de-combinatoire-2022H"
+m9 -> "$HOME/ownCloud/Mathematics/Courses/MAT995G-Seminaire-de-combinatoire-2022H"
 m9w -> "$HOME/saliola.github.io/maths/teaching/MAT7600-2021A"
-m7  -> "$HOME/ownCloud/Mathematics/Courses/MAT7600-Algebre-2021A"
+m7 -> "$HOME/ownCloud/Mathematics/Courses/MAT7600-Algebre-2021A"
 m7w -> "$HOME/saliola.github.io/maths/teaching/MAT7600-2021A"
 m7o -> "$HOME/ownCloud/Mathematics/Courses/MAT7600-Algebre-2020A"
 
