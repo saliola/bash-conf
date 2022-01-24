@@ -13,7 +13,7 @@
 # /home/username. This script substitutes ~ for $HOME when creating bookmarks.
 
 cecho() {
-    tput setaf 5
+    tput setaf 2
     echo "$1"
     tput sgr0
 }
@@ -61,9 +61,9 @@ function j() {
             BOOKMARK=$(grep -e "^$1[[:space:]]*->" $JUMP_LIST)
             if [ -z "$BOOKMARK" ] ; then
                 cecho "$FUNCNAME: Bookmark does not exist: $1" ;
+                return 1 ;
             else
                 NEWDIR=$(echo $BOOKMARK | sed 's/^.*-> //')
-                # cecho "$FUNCNAME: cd $NEWDIR"
                 eval "builtin cd $NEWDIR"
             fi
             ;;
@@ -114,12 +114,14 @@ function j() {
             if [ -z "$1" ] ; then
                 $FUNCNAME list ;
             elif [ -z "$2" ] ; then
-                $FUNCNAME cd $1 ;
+                $FUNCNAME cd $1 || return 1;
+                cecho $PWD ;
                 LS ;
             else
                 j cd $1
                 shift
                 $FUNCNAME cd_subdir "$@" ;
+                cecho $PWD ;
                 LS ;
             fi;
 
