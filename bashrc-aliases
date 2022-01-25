@@ -56,8 +56,8 @@ add_alias lv "ls --color=auto -v" 'lsort(){ ls -G "$@" | sort -V ;  unset -f lso
 
 add_alias t "tmux"
 
-# combine cd and ls into one command;
+# combine cd and (exa or ls) into one command;
 # NOTE: use `builtin cd` to access the builtin command
 function cd {
-    builtin cd "$@" && ls
+    builtin cd "$@" && command exa 2>/dev/null || ls
 }
