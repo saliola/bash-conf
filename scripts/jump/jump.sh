@@ -60,12 +60,15 @@ function j() {
         cd) shift
             BOOKMARK=$(grep -e "^$1[[:space:]]->" $JUMP_LIST)
             if [ -z "$BOOKMARK" ] ; then
-                cecho "$FUNCNAME: Bookmark does not exist: $1" ;
-                return 1 ;
-            else
-                NEWDIR=$(echo $BOOKMARK | sed 's/^.*-> //')
-                eval "builtin cd $NEWDIR"
+                if [ -d "$1" ]; then
+                    BOOKMARK="$1"
+                else
+                    cecho "$FUNCNAME: Bookmark does not exist: $1" ;
+                    return 1 ;
+                fi
             fi
+            NEWDIR=$(echo $BOOKMARK | sed 's/^.*-> //')
+            eval "builtin cd $NEWDIR"
             ;;
 
         cd_subdir) shift
@@ -138,6 +141,9 @@ _j()
     if [ $COMP_CWORD -eq 1 ]; then
         BOOKMARKS=$(grep -E '^[[:alnum:]]' $(j jumplist) | sed 's/ ->.*$//')
         COMPREPLY=( $(compgen -W "$BOOKMARKS" -- $cur) )
+        if [ -z "$COMPREPLY" ]; then
+            _filedir -d
+        fi;
     elif [ $COMP_CWORD -eq 2 ]; then
         BOOKMARK=$(grep -e "^$pre ->" $(j jumplist))
         if [ -z "$BOOKMARK" ] ; then
