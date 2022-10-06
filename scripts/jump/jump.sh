@@ -145,7 +145,7 @@ _j()
         else
             TARGET_DIR=$(echo $BOOKMARK | sed 's/^.*-> //')
             eval "builtin cd $TARGET_DIR"
-            _filedir
+            _filedir -d
         fi
     else
         COMPREPLY=()
@@ -154,4 +154,4 @@ _j()
     return 0
 }
 
-complete -F _j -o filenames j
+complete -F _j -o bashdefault j
