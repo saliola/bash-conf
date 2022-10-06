@@ -1,9 +1,6 @@
 # current courses and references
-m9 -> "$HOME/ownCloud/Mathematics/Courses/MAT995G-Seminaire-de-combinatoire-2022H"
-m9w -> "$HOME/saliola.github.io/maths/teaching/MAT7600-2021A"
-m7 -> "$HOME/ownCloud/Mathematics/Courses/MAT7600-Algebre-2021A"
-m7w -> "$HOME/saliola.github.io/maths/teaching/MAT7600-2021A"
-m7o -> "$HOME/ownCloud/Mathematics/Courses/MAT7600-Algebre-2020A"
+git-repos -> "$HOME/git-repos"
+m2 -> "$HOME/git-repos/MAT2250"
 
 # configuration
 bash-conf -> "$HOME/.bash-conf"
@@ -35,7 +32,6 @@ notes -> "$HOME/ownCloud/notes"
 math -> "$HOME/ownCloud/Mathematics"
 articles -> "$HOME/ownCloud/Mathematics/articles"
 courses -> "$HOME/ownCloud/Mathematics/Courses"
-grants -> "$HOME/ownCloud/Mathematics/Grants"
 projects -> "$HOME/ownCloud/Mathematics/projects"
 reviews -> "$HOME/ownCloud/Mathematics/reviews"
 talks -> "$HOME/ownCloud/Mathematics/Talks"
