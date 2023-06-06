@@ -38,11 +38,12 @@ talks -> "$HOME/ownCloud/Mathematics/Talks"
 
 # uqam
 advising -> "$HOME/ownCloud/uqam/advising"
-stages -> "$HOME/ownCloud/uqam/advising/stages-2021"
+stages -> "$HOME/ownCloud/lacim/stages-2023"
 reports -> "$HOME/ownCloud/uqam/reports"
 reference-letters -> "$HOME/ownCloud/uqam/recommendation-letters"
 recommendation-letters -> "$HOME/ownCloud/uqam/recommendation-letters"
 uqam -> "$HOME/ownCloud/uqam"
+lacim -> "$HOME/ownCloud/lacim"
 direction -> "$HOME/Dropbox/SharedFolders/Direction1ercycle"
 
 # projects
