@@ -2,7 +2,7 @@ function _my_git_cmd() {
     if [ $# -eq 0 ] ; then
         git status
     else
-        git $@
+        git "$@"
     fi
 }
 
