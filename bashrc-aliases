@@ -26,13 +26,15 @@ function add_alias() {
 
 # alias g='git' # defined in bashrc-macosx and bashrc-linux
 
-add_alias h "hg"
+add_alias c "clear"
 
 add_alias grep "grep --color=auto"
 
 add_alias m "make"
 
 add_alias mu "mupdf" "mupdf"
+
+add_alias nv "nvim"
 
 add_alias s "sage"
 
@@ -41,23 +43,18 @@ add_alias o "/usr/bin/gio open" "open"
 add_alias icp "cp -i"
 add_alias imv "mv -i"
 
-add_alias l  "exa"
-add_alias ll "exa --long --header --git"
-add_alias la "exa --long --header --git --all"
-add_alias lt "exa --long --sort newest"
+add_alias l  "eza"
+add_alias ll "eza --long --header --git"
+add_alias la "eza --long --header --git --all"
+add_alias lt "eza --long --sort newest"
 
-# add_alias l "ls --color=auto" "ls -G"
 add_alias ls "ls --color=auto" "ls -G"
-# add_alias ll "ls --color=auto -lsh" "ls -G -lh"
-# add_alias la "ls --color=auto -a" "ls -G -a"
 add_alias lv "ls --color=auto -v" 'lsort(){ ls -G "$@" | sort -V ;  unset -f lsort; }; lsort'
-# add_alias lrt "ls --color=auto -lrth" "ls -G -lrth"
-
 
 add_alias t "tmux"
 
-# combine cd and (exa or ls) into one command;
+# combine cd and (eza or ls) into one command;
 # NOTE: use `builtin cd` to access the builtin command
 function cd {
-    builtin cd "$@" && command exa 2>/dev/null || ls
+    builtin cd "$@" && command eza 2>/dev/null || ls
 }

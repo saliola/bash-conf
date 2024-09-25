@@ -9,3 +9,10 @@ PATH=${PATH%:\/usr\/texbin\//}
 # add /Library/TeX/texbin to PATH
 PATH=$PATH:/Library/TeX/texbin
 export PATH=$PATH
+
+#######################################################################
+#             configure shell to automatically use chruby             #
+#######################################################################
+source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
+source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.1.3
