@@ -1,6 +1,6 @@
 # current courses and references
 git-repos -> "$HOME/git-repos"
-m2 -> "$HOME/git-repos/MAT2250"
+m2 -> "$HOME/git-repos/MAT2260"
 
 # configuration
 bash-conf -> "$HOME/.bash-conf"
@@ -16,36 +16,30 @@ sage -> "$HOME/Applications/sage"
 
 # various directories
 dl -> "$HOME/Downloads"
-downloads -> "$HOME/Downloads"
+dt -> "$HOME/Desktop"
 docs -> "$HOME/Documents"
+downloads -> "$HOME/Downloads"
 website -> "$HOME/saliola.github.io"
-
-# dropbox
-Dropbox -> "$HOME/Dropbox"
-dropbox -> "$HOME/Dropbox"
-db -> "$HOME/Dropbox"
 
 # ownCloud (UQAM)
 oc -> "$HOME/ownCloud"
-ebooks -> "$HOME/ownCloud/eBooks"
-cv -> "$HOME/ownCloud/Mathematics/Applications/cv.git"
-notes -> "$HOME/ownCloud/notes"
-math -> "$HOME/ownCloud/Mathematics"
+advising -> "$HOME/ownCloud/uqam/advising"
 articles -> "$HOME/ownCloud/Mathematics/articles"
 courses -> "$HOME/ownCloud/Mathematics/Courses"
-projects -> "$HOME/ownCloud/Mathematics/projects"
-reviews -> "$HOME/ownCloud/Mathematics/reviews"
-talks -> "$HOME/ownCloud/Mathematics/Talks"
-
-# uqam
-advising -> "$HOME/ownCloud/uqam/advising"
-stages -> "$HOME/ownCloud/lacim/stages-2023"
-reports -> "$HOME/ownCloud/uqam/reports"
-reference-letters -> "$HOME/ownCloud/uqam/recommendation-letters"
-recommendation-letters -> "$HOME/ownCloud/uqam/recommendation-letters"
-uqam -> "$HOME/ownCloud/uqam"
+cv -> "$HOME/ownCloud/Mathematics/Applications/cv.git"
+ebooks -> "$HOME/ownCloud/eBooks"
 lacim -> "$HOME/ownCloud/lacim"
-direction -> "$HOME/Dropbox/SharedFolders/Direction1ercycle"
+math -> "$HOME/ownCloud/Mathematics"
+notes -> "$HOME/ownCloud/notes"
+projects -> "$HOME/ownCloud/Mathematics/projects"
+recommendation-letters -> "$HOME/ownCloud/uqam/recommendation-letters"
+reference-letters -> "$HOME/ownCloud/uqam/recommendation-letters"
+reimbursements -> "$HOME/ownCloud/uqam/reimbursements"
+reports -> "$HOME/ownCloud/uqam/reports"
+reviews -> "$HOME/ownCloud/Mathematics/reviews"
+stages -> "$HOME/ownCloud/lacim/stages-2023"
+talks -> "$HOME/ownCloud/Mathematics/Talks"
+uqam -> "$HOME/ownCloud/uqam"
 
 # projects
 imm -> "$HOME/ownCloud/Mathematics/articles/Immaculate"
