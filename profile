@@ -14,13 +14,6 @@
 
 BASHCONF_DIR=$HOME/.bash-conf
 
-#######################################
-#  Set the PATH environment variable  #
-#######################################
-
-## Add my bin directory to the PATH
-export PATH=~/Applications/bin:$PATH
-
 ###########################################
 #  Load platform specific configurations  #
 ###########################################
@@ -38,3 +31,9 @@ elif [[ $UNAME == 'Linux' ]]; then
     fi
 fi
 
+#######################################
+#  Set the PATH environment variable  #
+#######################################
+
+## Add my bin directory to the PATH
+export PATH=$HOME/Applications/bin:$PATH

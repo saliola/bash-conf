@@ -20,17 +20,5 @@ function tarfile_util () {
 }
 alias tf=tarfile_util
 
-# cd to the most recently used sage_viewer* directory
-function sage-viewer-dir() {
-    if [[ $(uname) == 'Darwin' ]]; then
-        sage_viewer_dirs=$(find $TMPDIR -type d -name 'sage_viewer*' 2> /dev/null)
-        sage_viewer_dir=$(ls -td1 $sage_viewer_dirs | head -1)
-    else
-        sage_viewer_dir=$(ls -td1 $HOME/.sage/temp/$(hostname)/*/sage_viewer* | head -1)
-    fi;
-    echo "most recently used sage_viewer director: $sage_viewer_dir"
-    cd $sage_viewer_dir
-}
-
 # create a timestamped copy of a file
 alias timestamp=$BASHCONF_DIR/scripts/timestamp.sh
